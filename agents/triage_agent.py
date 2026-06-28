@@ -201,15 +201,10 @@ Return JSON only.
 
 
 # --------------------------------------------------
-# Main Processing Function
+# Main Processing Function From DataFrame
 # --------------------------------------------------
 
-def run_triage(
-    input_file="data/tickets.csv",
-    output_file="data/processed_tickets.csv"
-):
-
-    df = pd.read_csv(input_file)
+def run_triage_from_dataframe(df):
 
     ticket_list = convert_csv_to_tickets(df)
 
@@ -280,13 +275,30 @@ Record Details:
         ]
     ]
 
+    print("\nDONE - Gemini batch processing complete")
+    print(f"Processed {len(output)} records.")
+
+    return output
+
+
+# --------------------------------------------------
+# Optional Local File Processing
+# --------------------------------------------------
+
+def run_triage(
+    input_file="data/tickets.csv",
+    output_file="data/processed_tickets.csv"
+):
+
+    df = pd.read_csv(input_file)
+
+    output = run_triage_from_dataframe(df)
+
     output.to_csv(
         output_file,
         index=False
     )
 
-    print("\nDONE - Gemini batch processing complete")
-    print(f"Processed {len(output)} records.")
     print(f"Saved to: {output_file}")
 
     return output

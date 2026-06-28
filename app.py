@@ -1,9 +1,9 @@
-import os
 import hashlib
+import io
 import streamlit as st
 import pandas as pd
 
-from agents.triage_agent import run_triage
+from agents.triage_agent import run_triage_from_dataframe
 
 st.set_page_config(
     page_title="AI Ticket Triage Dashboard",
@@ -34,8 +34,6 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
 
-    os.makedirs("data", exist_ok=True)
-
     file_bytes = uploaded_file.getvalue()
     file_hash = hashlib.md5(file_bytes).hexdigest()
 
@@ -43,13 +41,11 @@ if uploaded_file is not None:
 
     if previous_file_hash != file_hash:
 
-        with open("data/tickets.csv", "wb") as f:
-            f.write(file_bytes)
-
-        if os.path.exists("data/processed_tickets.csv"):
-            os.remove("data/processed_tickets.csv")
+        raw_df = pd.read_csv(io.BytesIO(file_bytes))
 
         st.session_state["uploaded_file_hash"] = file_hash
+        st.session_state["raw_df"] = raw_df
+        st.session_state["processed_df"] = None
 
         st.success("File uploaded successfully.")
         st.info("Review the data preview below, then start AI processing.")
@@ -58,14 +54,15 @@ if uploaded_file is not None:
 
         st.success("File already uploaded.")
 
-    preview_df = pd.read_csv("data/tickets.csv")
+    if "raw_df" in st.session_state:
 
-    st.subheader("Data Preview")
-    st.dataframe(
-        preview_df.head(10),
-        width="stretch",
-        hide_index=True
-    )
+        st.subheader("Data Preview")
+
+        st.dataframe(
+            st.session_state["raw_df"].head(10),
+            width="stretch",
+            hide_index=True
+        )
 
 st.divider()
 
@@ -81,25 +78,24 @@ if st.button("Analyze Tickets", width="stretch"):
     print("PROCESS BUTTON CLICKED")
     print("==============================")
 
-    if not os.path.exists("data/tickets.csv"):
+    if "raw_df" not in st.session_state:
 
         st.error("Please upload a CSV file first.")
 
     else:
 
         try:
-            ticket_df = pd.read_csv("data/tickets.csv")
+            ticket_df = st.session_state["raw_df"]
 
             print(f"CSV Rows Found : {len(ticket_df)}")
 
             with st.spinner("Analyzing tickets with AI..."):
 
-                processed = run_triage(
-                    input_file="data/tickets.csv",
-                    output_file="data/processed_tickets.csv"
-                )
+                processed = run_triage_from_dataframe(ticket_df)
 
             print(f"Processed Returned : {len(processed)}")
+
+            st.session_state["processed_df"] = processed
 
             st.success(
                 f"Analysis complete. {len(processed)} tickets processed successfully."
@@ -116,11 +112,12 @@ if st.button("Analyze Tickets", width="stretch"):
 # Dashboard
 # =====================================================
 
-if os.path.exists("data/processed_tickets.csv"):
+if (
+    "processed_df" in st.session_state
+    and st.session_state["processed_df"] is not None
+):
 
-    processed = pd.read_csv("data/processed_tickets.csv")
-
-    display_df = processed.copy()
+    display_df = st.session_state["processed_df"].copy()
 
     st.subheader("📊 Ticket Insights Dashboard")
 
