@@ -1,91 +1,103 @@
 import pandas as pd
 import random
 
+NUM_TICKETS = 60
 
-tickets = [
+TEMPLATES = {
+    "Authentication Issue": [
+        "User cannot log in after resetting password.",
+        "Invalid session token prevents login.",
+        "MFA code not received.",
+        "Login page refreshes after sign in.",
+        "Password reset link expired.",
+    ],
+    "Account Access": [
+        "Account locked after failed attempts.",
+        "User cannot access profile.",
+        "Role assignment missing after onboarding.",
+        "Account disabled unexpectedly.",
+        "Shared account inaccessible.",
+    ],
+    "Performance Issue": [
+        "Dashboard loads very slowly.",
+        "Reports take too long to generate.",
+        "Application freezes during peak hours.",
+        "Search response is delayed.",
+        "High CPU usage causes lag.",
+    ],
+    "Application Bug": [
+        "Save button throws unknown error.",
+        "App crashes when opening settings.",
+        "Export feature fails.",
+        "Search returns incorrect results.",
+        "File upload ends with exception.",
+    ],
+    "Notification Issue": [
+        "Email alerts not received.",
+        "Push notifications stopped working.",
+        "SMS OTP delayed.",
+        "Reminder emails missing.",
+        "Approval notifications fail.",
+    ],
+    "Data Issue": [
+        "Report totals are incorrect.",
+        "Customer records missing.",
+        "Duplicate entries created.",
+        "Recent updates not visible.",
+        "Dashboard shows stale data.",
+    ],
+    "Integration Issue": [
+        "CRM sync failed.",
+        "ERP integration timeout.",
+        "Payment gateway authentication failed.",
+        "Webhook not triggering.",
+        "API returns 500 error.",
+    ],
+    "UI Issue": [
+        "Button not clickable.",
+        "Layout broken on mobile.",
+        "Text overlaps on dashboard.",
+        "Dark mode icons invisible.",
+        "Dropdown not opening.",
+    ],
+    "Permission Issue": [
+        "Manager cannot approve requests.",
+        "Admin page access denied.",
+        "User cannot edit records.",
+        "Role permissions missing.",
+        "Access denied after promotion.",
+    ],
+    "Security Issue": [
+        "Suspicious login detected.",
+        "Possible phishing email reported.",
+        "Unknown device accessed account.",
+        "Unexpected password change.",
+        "Security alert triggered.",
+    ],
+}
 
-    ("Customer cannot login after password reset", "Account Access"),
 
-    ("User forgot password and cannot access account", "Account Access"),
+def generate_ticket():
+    category = random.choice(list(TEMPLATES.keys()))
+    ticket = random.choice(TEMPLATES[category])
+    return ticket, category
 
-    ("Account locked after multiple failed attempts", "Account Access"),
+rows = []
 
-    ("Payment failed but money was deducted", "Payment Issue"),
-
-    ("Refund has not reached bank account", "Payment Issue"),
-
-    ("Credit card payment is not going through", "Payment Issue"),
-
-    ("Internet connection is very slow", "Network Issue"),
-
-    ("WiFi keeps disconnecting", "Network Issue"),
-
-    ("VPN connection is failing", "Network Issue"),
-
-    ("Application crashes when opening", "Technical Issue"),
-
-    ("System shows unexpected error message", "Technical Issue"),
-
-    ("Software is running very slowly", "Technical Issue"),
-
-    ("Laptop screen is not turning on", "Hardware Issue"),
-
-    ("Keyboard keys stopped working", "Hardware Issue"),
-
-    ("Battery is draining quickly", "Hardware Issue"),
-
-    ("New update broke the application", "Software Bug"),
-
-    ("Feature is not working correctly", "Software Bug"),
-
-    ("Application throws server error", "Software Bug"),
-
-    ("Subscription renewal failed", "Subscription"),
-
-    ("Need to upgrade subscription plan", "Subscription"),
-
-    ("Cannot cancel my subscription", "Subscription"),
-
-    ("Order has not arrived yet", "Delivery Issue"),
-
-    ("Package delivered to wrong address", "Delivery Issue"),
-
-    ("Need tracking information", "Delivery Issue"),
-
-    ("Suspicious login detected", "Security Issue"),
-
-    ("Account activity looks unusual", "Security Issue"),
-
-    ("Need help changing security settings", "Security Issue"),
-
-    ("Need help with product information", "General Support"),
-
-    ("Customer has a general question", "General Support"),
-
-]
-
-
-data = []
-
-
-for i in range(200):
-
-    ticket, category = random.choice(tickets)
-
-    data.append({
-        "ticket_id": i + 1,
+for i in range(1, NUM_TICKETS + 1):
+    ticket, category = generate_ticket()
+    rows.append({
+        "ticket_id": i,
         "ticket": ticket,
         "expected_category": category
     })
 
+random.shuffle(rows)
 
-df = pd.DataFrame(data)
+for i, row in enumerate(rows, start=1):
+    row["ticket_id"] = i
 
+df = pd.DataFrame(rows)
+df.to_csv("data/tickets.csv", index=False)
 
-df.to_csv(
-    "data/tickets.csv",
-    index=False
-)
-
-
-print("200 tickets created")
+print(f"{NUM_TICKETS} tickets created successfully.")

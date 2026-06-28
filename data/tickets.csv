@@ -1,21 +1,61 @@
-ticket
-User is unable to login after resetting password, system says invalid session token
-Two factor authentication code is not arriving on mobile device
-User account is locked after multiple failed login attempts
-Application takes more than five minutes to load dashboard
-Dashboard page crashes when opening analytics section
-User receives unexpected error while saving profile changes
-Email notifications are not being sent for new alerts
-Push notifications stopped working after latest update
-Uploaded documents are missing from user account
-Reports are showing incorrect data compared to previous day
-User cannot export reports as PDF file
-Application freezes when switching between pages
-Search feature is not returning expected results
-User cannot access admin panel despite having permission
-Team members cannot view shared workspace
-API integration with external tool is failing
-Third party service connection keeps disconnecting
-Application layout is broken on mobile screen
-Security alert showing suspicious login activity
-User wants to update account security settings
+ticket_id,ticket,expected_category
+1,Application freezes during peak hours.,Performance Issue
+2,Access denied after promotion.,Permission Issue
+3,API returns 500 error.,Integration Issue
+4,Unexpected password change.,Security Issue
+5,File upload ends with exception.,Application Bug
+6,Role assignment missing after onboarding.,Account Access
+7,ERP integration timeout.,Integration Issue
+8,Password reset link expired.,Authentication Issue
+9,Role permissions missing.,Permission Issue
+10,Approval notifications fail.,Notification Issue
+11,CRM sync failed.,Integration Issue
+12,API returns 500 error.,Integration Issue
+13,Search response is delayed.,Performance Issue
+14,Account disabled unexpectedly.,Account Access
+15,Role permissions missing.,Permission Issue
+16,Role assignment missing after onboarding.,Account Access
+17,Push notifications stopped working.,Notification Issue
+18,Webhook not triggering.,Integration Issue
+19,Customer records missing.,Data Issue
+20,Reminder emails missing.,Notification Issue
+21,Suspicious login detected.,Security Issue
+22,Role assignment missing after onboarding.,Account Access
+23,Button not clickable.,UI Issue
+24,Email alerts not received.,Notification Issue
+25,Dashboard shows stale data.,Data Issue
+26,Admin page access denied.,Permission Issue
+27,High CPU usage causes lag.,Performance Issue
+28,App crashes when opening settings.,Application Bug
+29,Reports take too long to generate.,Performance Issue
+30,MFA code not received.,Authentication Issue
+31,API returns 500 error.,Integration Issue
+32,Search returns incorrect results.,Application Bug
+33,Text overlaps on dashboard.,UI Issue
+34,App crashes when opening settings.,Application Bug
+35,Recent updates not visible.,Data Issue
+36,SMS OTP delayed.,Notification Issue
+37,Role assignment missing after onboarding.,Account Access
+38,Email alerts not received.,Notification Issue
+39,Dropdown not opening.,UI Issue
+40,Application freezes during peak hours.,Performance Issue
+41,Payment gateway authentication failed.,Integration Issue
+42,User cannot log in after resetting password.,Authentication Issue
+43,Dark mode icons invisible.,UI Issue
+44,Password reset link expired.,Authentication Issue
+45,Push notifications stopped working.,Notification Issue
+46,Account locked after failed attempts.,Account Access
+47,Access denied after promotion.,Permission Issue
+48,Manager cannot approve requests.,Permission Issue
+49,Admin page access denied.,Permission Issue
+50,Layout broken on mobile.,UI Issue
+51,Button not clickable.,UI Issue
+52,Password reset link expired.,Authentication Issue
+53,Layout broken on mobile.,UI Issue
+54,SMS OTP delayed.,Notification Issue
+55,Text overlaps on dashboard.,UI Issue
+56,Shared account inaccessible.,Account Access
+57,MFA code not received.,Authentication Issue
+58,User cannot edit records.,Permission Issue
+59,Text overlaps on dashboard.,UI Issue
+60,Role permissions missing.,Permission Issue

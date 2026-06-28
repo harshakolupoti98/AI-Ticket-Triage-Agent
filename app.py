@@ -11,13 +11,15 @@ st.set_page_config(
 )
 
 st.title("🎫 AI Ticket Triage Agent")
-st.markdown("Upload customer support tickets, process them with Gemini AI, and analyze the results.")
+st.markdown(
+    "Upload customer support tickets, process them with Gemini AI, and analyze the results."
+)
 
 st.divider()
 
-# -------------------------------------------------------
+# =====================================================
 # Upload CSV
-# -------------------------------------------------------
+# =====================================================
 
 st.subheader("📤 Upload Ticket CSV")
 
@@ -35,40 +37,63 @@ if uploaded_file is not None:
 
 st.divider()
 
-# -------------------------------------------------------
+# =====================================================
 # Process Button
-# -------------------------------------------------------
+# =====================================================
 
 st.subheader("🤖 AI Ticket Processing")
 
-if st.button("Process Tickets with Gemini", use_container_width=True):
+if st.button("Process Tickets with Gemini", width="stretch"):
+
+    print("\n==============================")
+    print("PROCESS BUTTON CLICKED")
+    print("==============================")
 
     if not os.path.exists("data/tickets.csv"):
+
         st.error("Please upload a CSV first.")
 
     else:
 
+        ticket_df = pd.read_csv("data/tickets.csv")
+
+        print(f"Tickets Found : {len(ticket_df)}")
+
         with st.spinner("Gemini is processing tickets..."):
 
-            run_triage(
+            processed = run_triage(
                 input_file="data/tickets.csv",
                 output_file="data/processed_tickets.csv"
             )
 
-        st.success("Processing completed successfully!")
+        print(f"Processed Returned : {len(processed)}")
 
-st.divider()
+        st.success(
+            f"Successfully processed {len(processed)} tickets!"
+        )
 
-# -------------------------------------------------------
-# Load Data
-# -------------------------------------------------------
+        st.rerun()
 
-if os.path.exists("data/tickets.csv") and os.path.exists("data/processed_tickets.csv"):
+# =====================================================
+# Dashboard
+# =====================================================
+
+if (
+    os.path.exists("data/tickets.csv")
+    and
+    os.path.exists("data/processed_tickets.csv")
+):
 
     tickets = pd.read_csv("data/tickets.csv")
     processed = pd.read_csv("data/processed_tickets.csv")
 
-    processed["Ticket"] = tickets["ticket"]
+    # Keep only matching rows
+    rows = min(len(tickets), len(processed))
+
+    tickets = tickets.iloc[:rows]
+    processed = processed.iloc[:rows]
+
+    processed["Ticket"] = tickets["ticket"].values
 
     display_df = processed[
         [
@@ -81,55 +106,65 @@ if os.path.exists("data/tickets.csv") and os.path.exists("data/processed_tickets
         ]
     ]
 
-    # ---------------------------------------------------
+    # =================================================
     # Metrics
-    # ---------------------------------------------------
+    # =================================================
 
     st.subheader("📊 Dashboard")
 
-    col1, col2, col3 = st.columns(3)
+    c1, c2, c3 = st.columns(3)
 
-    with col1:
+    with c1:
         st.metric(
             "Total Tickets",
             len(display_df)
         )
 
-    with col2:
+    with c2:
         st.metric(
             "Categories",
             display_df["category"].nunique()
         )
 
-    with col3:
+    with c3:
         st.metric(
             "High Priority",
-            len(display_df[
-                display_df["priority"] == "High"
-            ])
+            len(
+                display_df[
+                    display_df["priority"] == "High"
+                ]
+            )
         )
 
     st.divider()
 
-    # ---------------------------------------------------
-    # Search
-    # ---------------------------------------------------
+    # =================================================
+    # Search & Filters
+    # =================================================
 
     st.subheader("🔍 Search & Filter")
 
-    search = st.text_input(
-        "Search ticket"
-    )
+    search = st.text_input("Search Ticket")
 
-    category = st.selectbox(
-        "Category",
-        ["All"] + sorted(display_df["category"].unique())
-    )
+    col1, col2 = st.columns(2)
 
-    priority = st.selectbox(
-        "Priority",
-        ["All"] + sorted(display_df["priority"].unique())
-    )
+    with col1:
+
+        category = st.selectbox(
+            "Category",
+            ["All"] + sorted(
+                display_df["category"].unique()
+            )
+        )
+
+    with col2:
+
+        priority = st.selectbox(
+            "Priority",
+            ["All"] + sorted(
+                display_df["priority"].unique()
+            )
+        )
 
     filtered = display_df.copy()
 
@@ -157,13 +192,13 @@ if os.path.exists("data/tickets.csv") and os.path.exists("data/processed_tickets
 
     st.divider()
 
-    # ---------------------------------------------------
+    # =================================================
     # Charts
-    # ---------------------------------------------------
+    # =================================================
 
-    col1, col2 = st.columns(2)
+    left, right = st.columns(2)
 
-    with col1:
+    with left:
 
         st.subheader("📂 Category Distribution")
 
@@ -171,7 +206,7 @@ if os.path.exists("data/tickets.csv") and os.path.exists("data/processed_tickets
             display_df["category"].value_counts()
         )
 
-    with col2:
+    with right:
 
         st.subheader("🚨 Priority Distribution")
 
@@ -181,32 +216,32 @@ if os.path.exists("data/tickets.csv") and os.path.exists("data/processed_tickets
 
     st.divider()
 
-    # ---------------------------------------------------
+    # =================================================
     # Ticket Table
-    # ---------------------------------------------------
+    # =================================================
 
     st.subheader("📋 Processed Tickets")
 
     st.dataframe(
         filtered,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
     st.divider()
 
-    # ---------------------------------------------------
+    # =================================================
     # Download
-    # ---------------------------------------------------
+    # =================================================
 
     st.download_button(
         "📥 Download Processed CSV",
-        data=processed.to_csv(index=False),
-        file_name="processed_tickets.csv",
-        mime="text/csv",
-        use_container_width=True
+        processed.to_csv(index=False),
+        "processed_tickets.csv",
+        "text/csv",
+        width="stretch"
     )
 
 else:
 
-    st.info("Upload a CSV and process tickets to view the dashboard.")
+    st.info("Upload a CSV and click 'Process Tickets with Gemini'.")

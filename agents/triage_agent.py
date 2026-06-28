@@ -18,7 +18,7 @@ client = genai.Client(
 # Gemini Batch Processing
 # --------------------------------------------------
 
-def process_batch(tickets):
+def process_batch(tickets, ticket_count):
 
     prompt = f"""
 You are an AI customer support ticket triage agent.
@@ -31,8 +31,8 @@ Tickets:
 
 IMPORTANT RULES:
 
-- You must return exactly 20 ticket results.
-- ticket_id must go from 1 to 20.
+- You must return exactly {ticket_count} ticket results.
+- ticket_id must go from 1 to {ticket_count}.
 - Do not stop after one ticket.
 - Do not combine tickets.
 - Create one result object for every ticket.
@@ -49,26 +49,11 @@ Use this exact structure:
       "priority": "",
       "summary": "",
       "suggested_action": ""
-    }},
-    {{
-      "ticket_id": 2,
-      "category": "",
-      "priority": "",
-      "summary": "",
-      "suggested_action": ""
-    }}
-
-    ...
-
-    {{
-      "ticket_id": 20,
-      "category": "",
-      "priority": "",
-      "summary": "",
-      "suggested_action": ""
     }}
   ]
 }}
+
+Continue the same JSON structure until all {ticket_count} tickets have been returned.
 
 Categories MUST be ONLY one of:
 
@@ -99,6 +84,12 @@ Return JSON only.
         contents=prompt
     )
 
+    print("\n========================================")
+    print("RAW GEMINI RESPONSE")
+    print("========================================\n")
+    print(response.text)
+    print("\n========================================\n")
+
     cleaned = response.text.strip()
 
     if cleaned.startswith("```"):
@@ -120,10 +111,8 @@ def run_triage(
     output_file="data/processed_tickets.csv"
 ):
 
-    # Read input CSV
     df = pd.read_csv(input_file)
 
-    # Detect ticket column automatically
     ticket_column = None
 
     for col in df.columns:
@@ -134,12 +123,9 @@ def run_triage(
     if ticket_column is None:
         raise Exception("No 'ticket' column found in CSV.")
 
-    # Remove empty tickets
     df = df.dropna(subset=[ticket_column])
 
-    # TESTING ONLY
-    # Process first 20 tickets
-    df = df.head(20)
+    ticket_count = len(df)
 
     ticket_text = ""
 
@@ -151,15 +137,12 @@ Ticket: {ticket}
 
 """
 
-    print(f"Sending {len(df)} tickets to Gemini...")
+    print(f"Sending {ticket_count} tickets to Gemini...")
 
-    # Process with Gemini
-    results = process_batch(ticket_text)
+    results = process_batch(ticket_text, ticket_count)
 
-    # Convert to DataFrame
     output = pd.DataFrame(results)
 
-    # Save results
     output.to_csv(
         output_file,
         index=False
@@ -169,7 +152,6 @@ Ticket: {ticket}
     print(f"Processed {len(output)} tickets.")
     print(f"Saved to: {output_file}")
 
-    # Return DataFrame (used later by Streamlit)
     return output
 
 
