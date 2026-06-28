@@ -1,61 +1,121 @@
 ticket_id,category,priority,summary,suggested_action
-1,Performance Issue,High,Application performance degradation leading to freezing during peak usage periods.,"Investigate application logs and server metrics during peak hours. Check for resource exhaustion (CPU, memory, database connections) and identify bottlenecks."
-2,Permission Issue,High,"User is denied access to resources or functionalities following a recent promotion, indicating incorrect permission assignment.",Verify the user's new role and associated permissions. Ensure all necessary access rights are correctly provisioned for the new role.
-3,Integration Issue,High,"An API endpoint is consistently returning a 500 internal server error, indicating a critical backend issue.",Review API server logs for detailed error messages. Examine recent code deployments or configuration changes that might have introduced the error.
-4,Security Issue,High,User reports an unauthorized or unexpected change to their password.,Immediately lock the affected account and initiate a security investigation. Advise the user to enable MFA and change their password once access is restored securely.
-5,Application Bug,Medium,"File upload functionality is failing, resulting in an unhandled exception.","Review application logs for the specific exception details. Check file storage configuration, permissions, and server-side validation logic."
-6,Permission Issue,High,"A newly onboarded user has not been assigned the necessary roles, preventing them from accessing required systems or functionalities.",Verify the onboarding process and automated role assignment. Manually assign the correct roles to the user and investigate why the automated process failed.
-7,Integration Issue,High,"The integration with the ERP system is experiencing timeouts, preventing data exchange or process completion.","Check network connectivity between systems, review ERP and integration middleware logs for errors, and examine timeout settings."
-8,Authentication Issue,Medium,User is unable to reset their password because the generated reset link has expired.,Investigate the password reset link expiration policy. Instruct the user to request a new password reset link and try again promptly.
-9,Permission Issue,High,"User reports missing permissions for specific actions or resources, preventing them from completing their tasks.",Review the user's assigned roles and their corresponding permissions. Re-assign or adjust roles as necessary.
-10,Notification Issue,Medium,"Approval notifications are not being sent or received, potentially delaying critical business processes.","Check notification service logs, email server connectivity, and recipient settings. Verify the notification trigger conditions."
-11,Integration Issue,High,"The synchronization process between the application and CRM system has failed, leading to inconsistent data.","Review sync job logs for errors. Check API credentials, data mapping, and network connectivity between systems."
-12,Integration Issue,High,"An API endpoint is consistently returning a 500 internal server error, indicating a critical backend issue.",Review API server logs for detailed error messages. Examine recent code deployments or configuration changes that might have introduced the error.
-13,Performance Issue,Medium,Search queries are taking an unusually long time to return results.,"Investigate database performance, search index status, and server resource utilization during search operations."
-14,Account Access,High,User's account has been disabled without prior notice or apparent reason.,Check account status and audit logs for the reason for disablement. Re-enable the account if no malicious activity is detected and inform the user.
-15,Permission Issue,High,"User reports missing permissions for specific actions or resources, preventing them from completing their tasks.",Review the user's assigned roles and their corresponding permissions. Re-assign or adjust roles as necessary.
-16,Permission Issue,High,"A newly onboarded user has not been assigned the necessary roles, preventing them from accessing required systems or functionalities.",Verify the onboarding process and automated role assignment. Manually assign the correct roles to the user and investigate why the automated process failed.
-17,Notification Issue,High,Push notifications are no longer being delivered to users.,"Check the status of the push notification service, review application logs for errors, and verify device token validity."
-18,Integration Issue,Medium,"A configured webhook is not triggering as expected, preventing real-time updates to external systems.","Review webhook configuration, endpoint accessibility, and application logs for outgoing requests and errors."
-19,Data Issue,High,Customer records are reported as missing from the system.,"Investigate recent data operations, database integrity, and potential data synchronization issues. Attempt to locate or restore the missing records."
-20,Notification Issue,Medium,Automated reminder emails are not being sent or received by users.,"Check the email sending service status, cron jobs for reminders, and email logs for delivery failures."
-21,Security Issue,High,The system has detected a suspicious login attempt or successful login from an unusual location or device.,"Lock the affected account, notify the user, and initiate a security investigation. Advise the user to change their password and enable MFA."
-22,Permission Issue,High,"A newly onboarded user has not been assigned the necessary roles, preventing them from accessing required systems or functionalities.",Verify the onboarding process and automated role assignment. Manually assign the correct roles to the user and investigate why the automated process failed.
-23,UI Issue,Low,A specific button on the user interface is unresponsive to clicks.,Inspect the front-end code for JavaScript errors or overlapping elements. Check for conditional rendering logic that might prevent interaction.
-24,Notification Issue,Medium,Users are not receiving expected email alerts from the system.,"Check the email sending service status, mail server logs, and user email preferences. Verify spam folders."
-25,Data Issue,Medium,"The dashboard is displaying outdated information, not reflecting recent changes or real-time data.","Investigate data refresh mechanisms, cache invalidation, and data source connectivity for the dashboard."
-26,Permission Issue,High,An administrator is being denied access to the admin page or specific administrative functions.,Verify the administrator's role and associated permissions. Check for any recent changes to access control policies or user groups.
-27,Performance Issue,High,High CPU utilization on the server is causing significant system lag and unresponsiveness.,"Identify the processes consuming high CPU. Optimize inefficient code, database queries, or scale up server resources."
-28,Application Bug,Medium,The application crashes unexpectedly when a user attempts to open the settings menu.,Review application crash logs for stack traces. Debug the settings module for potential null pointer exceptions or unhandled errors.
-29,Performance Issue,Medium,Report generation processes are experiencing excessive delays.,"Optimize database queries used for reports, review report generation logic, and consider background processing for large reports."
-30,Authentication Issue,High,"User is not receiving the multi-factor authentication (MFA) code, preventing login.","Check the MFA provider status, user's registered MFA device/method, and SMS/email delivery logs."
-31,Integration Issue,High,"An API endpoint is consistently returning a 500 internal server error, indicating a critical backend issue.",Review API server logs for detailed error messages. Examine recent code deployments or configuration changes that might have introduced the error.
-32,Application Bug,Medium,Search functionality is returning irrelevant or incorrect results for queries.,"Investigate search indexing, query parsing, and relevance ranking algorithms. Check for data inconsistencies that might affect search."
-33,UI Issue,Low,"Text elements on the dashboard are overlapping, making content difficult to read.",Inspect CSS and layout settings for the dashboard. Test on different screen resolutions and browsers to identify rendering issues.
-34,Application Bug,Medium,The application crashes unexpectedly when a user attempts to open the settings menu.,Review application crash logs for stack traces. Debug the settings module for potential null pointer exceptions or unhandled errors.
-35,Data Issue,Medium,Users are unable to see recent updates or changes within the application.,"Investigate caching mechanisms, database replication status, and data synchronization processes."
-36,Authentication Issue,High,"SMS One-Time Password (OTP) messages are experiencing significant delays, preventing users from logging in or verifying actions.","Check the SMS gateway provider status, network connectivity, and SMS service logs for delivery issues."
-37,Permission Issue,High,"A newly onboarded user has not been assigned the necessary roles, preventing them from accessing required systems or functionalities.",Verify the onboarding process and automated role assignment. Manually assign the correct roles to the user and investigate why the automated process failed.
-38,Notification Issue,Medium,Users are not receiving expected email alerts from the system.,"Check the email sending service status, mail server logs, and user email preferences. Verify spam folders."
-39,UI Issue,Low,A specific dropdown menu on the user interface is not expanding when clicked.,Inspect the front-end code for JavaScript errors or conflicts. Check CSS for z-index issues or hidden overflows.
-40,Performance Issue,High,Application performance degradation leading to freezing during peak usage periods.,"Investigate application logs and server metrics during peak hours. Check for resource exhaustion (CPU, memory, database connections) and identify bottlenecks."
-41,Integration Issue,High,"The payment gateway is failing to authenticate, preventing transactions from being processed.","Check payment gateway API credentials, network connectivity to the gateway, and review gateway specific error logs."
-42,Authentication Issue,High,A user is unable to log in even after successfully resetting their password.,"Verify the user's account status, ensure the new password was correctly saved, and check for any account lockouts or MFA issues."
-43,UI Issue,Low,Icons are not visible when the application is in dark mode.,"Review CSS styling for dark mode, ensuring icon colors or backgrounds contrast correctly with the dark theme."
-44,Authentication Issue,Medium,User is unable to reset their password because the generated reset link has expired.,Investigate the password reset link expiration policy. Instruct the user to request a new password reset link and try again promptly.
-45,Notification Issue,High,Push notifications are no longer being delivered to users.,"Check the status of the push notification service, review application logs for errors, and verify device token validity."
-46,Authentication Issue,High,User's account has been locked due to multiple failed login attempts.,"Verify the user's identity, unlock the account, and advise on best practices for password management. Check for suspicious activity."
-47,Permission Issue,High,"User is denied access to resources or functionalities following a recent promotion, indicating incorrect permission assignment.",Verify the user's new role and associated permissions. Ensure all necessary access rights are correctly provisioned for the new role.
-48,Permission Issue,High,A manager role is unable to approve pending requests.,Verify the manager's role permissions related to approval workflows. Check for any system-wide issues affecting approval processes.
-49,Permission Issue,High,An administrator is being denied access to the admin page or specific administrative functions.,Verify the administrator's role and associated permissions. Check for any recent changes to access control policies or user groups.
-50,UI Issue,Medium,The application's layout is distorted or broken when viewed on mobile devices.,Debug responsive CSS and media queries. Test on various mobile devices and browsers to isolate the layout issues.
-51,UI Issue,Low,A specific button on the user interface is unresponsive to clicks.,Inspect the front-end code for JavaScript errors or overlapping elements. Check for conditional rendering logic that might prevent interaction.
-52,Authentication Issue,Medium,User is unable to reset their password because the generated reset link has expired.,Investigate the password reset link expiration policy. Instruct the user to request a new password reset link and try again promptly.
-53,UI Issue,Medium,The application's layout is distorted or broken when viewed on mobile devices.,Debug responsive CSS and media queries. Test on various mobile devices and browsers to isolate the layout issues.
-54,Authentication Issue,High,"SMS One-Time Password (OTP) messages are experiencing significant delays, preventing users from logging in or verifying actions.","Check the SMS gateway provider status, network connectivity, and SMS service logs for delivery issues."
-55,UI Issue,Low,"Text elements on the dashboard are overlapping, making content difficult to read.",Inspect CSS and layout settings for the dashboard. Test on different screen resolutions and browsers to identify rendering issues.
-56,Account Access,High,"A shared user account, essential for collaborative tasks, is currently inaccessible.","Verify the account credentials, check for any lockouts or security policies applied, and investigate recent changes to shared account management."
-57,Authentication Issue,High,"User is not receiving the multi-factor authentication (MFA) code, preventing login.","Check the MFA provider status, user's registered MFA device/method, and SMS/email delivery logs."
-58,Permission Issue,High,"A user is unable to edit specific records, indicating a lack of appropriate permissions.",Review the user's assigned roles and the permissions granted for editing these specific record types. Adjust roles or permissions as needed.
-59,UI Issue,Low,"Text elements on the dashboard are overlapping, making content difficult to read.",Inspect CSS and layout settings for the dashboard. Test on different screen resolutions and browsers to identify rendering issues.
-60,Permission Issue,High,"User reports missing permissions for specific actions or resources, preventing them from completing their tasks.",Review the user's assigned roles and their corresponding permissions. Re-assign or adjust roles as necessary.
+1,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
+2,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
+3,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
+4,Application Bug,Medium,System is creating duplicate entries for records.,Investigate data creation process and database integrity.
+5,Application Bug,Medium,Users are unable to successfully use the export feature.,Examine export functionality logs and code.
+6,Data Issue,Medium,Generated reports display incorrect aggregated totals.,Review report generation logic and data aggregation queries.
+7,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
+8,Performance Issue,Medium,The dashboard is experiencing significant delays in loading.,"Investigate backend queries, network latency, and server performance."
+9,Application Bug,Medium,Search queries are returning irrelevant or incorrect results.,"Review search index, algorithm, and data sources."
+10,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
+11,Application Bug,Medium,Recently made updates are not appearing in the user interface.,"Check data synchronization, caching mechanisms, and UI refresh logic."
+12,Security Issue,High,A user's password was changed without their initiation or knowledge.,"Immediately escalate to security team, investigate audit logs, and secure the account."
+13,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
+14,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
+15,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
+16,Permission Issue,Medium,A newly onboarded user is missing their assigned roles and permissions.,Verify onboarding process and role assignment configuration.
+17,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
+18,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
+19,Application Bug,Medium,Users are unable to successfully use the export feature.,Examine export functionality logs and code.
+20,Data Issue,Medium,Generated reports display incorrect aggregated totals.,Review report generation logic and data aggregation queries.
+21,Permission Issue,Medium,A specific user or group is unable to edit records they should have access to.,"Check user's permissions, role assignments, and record ownership."
+22,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
+23,Application Bug,High,The API is consistently returning internal server (500) errors.,Escalate to backend development team for immediate investigation of server logs and service health.
+24,Notification Issue,Medium,Push notifications are no longer being delivered to users.,"Check notification service status, device tokens, and backend push logic."
+25,Security Issue,High,The system has detected a suspicious login attempt or successful login.,"Immediately escalate to security team, investigate login details, and user account activity."
+26,Performance Issue,High,"The application is experiencing high CPU usage, leading to significant system lag.","Monitor system resources, identify resource-intensive processes, and optimize code/infrastructure."
+27,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
+28,Permission Issue,Medium,A user promoted to a new role is being denied access to expected resources.,Review user's new role assignments and associated permissions.
+29,Permission Issue,Medium,A newly onboarded user is missing their assigned roles and permissions.,Verify onboarding process and role assignment configuration.
+30,Authentication Issue,Medium,SMS One-Time Passcodes are experiencing significant delays in delivery.,"Check SMS gateway service status, message queues, and user's phone number."
+31,Permission Issue,High,An authorized administrator is unable to access the admin page.,"Verify administrator's roles, permissions, and audit any recent changes to access control."
+32,Authentication Issue,Medium,Password reset links are expiring too quickly or immediately upon generation.,Review password reset link validity period configuration and generation process.
+33,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
+34,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
+35,Application Bug,Medium,File uploads are failing with an unexpected exception.,"Investigate file upload service logs, storage permissions, and server capacity."
+36,Application Bug,Medium,System is creating duplicate entries for records.,Investigate data creation process and database integrity.
+37,Integration Issue,High,The system is failing to authenticate with the payment gateway.,"Verify payment gateway credentials, API keys, and network connectivity."
+38,Permission Issue,Medium,A specific user or group is unable to edit records they should have access to.,"Check user's permissions, role assignments, and record ownership."
+39,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
+40,Authentication Issue,Medium,Users are not receiving Multi-Factor Authentication codes.,"Check MFA service status, user's contact information, and delivery channels."
+41,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
+42,Authentication Issue,High,A user is unable to log in even after successfully resetting their password.,"Investigate account status, password reset flow, and authentication service logs."
+43,Performance Issue,High,The application becomes unresponsive or freezes during periods of high usage.,"Conduct load testing, optimize database queries, and scale infrastructure."
+44,Account Access,Medium,A shared account required by multiple users is currently inaccessible.,"Investigate shared account credentials, permissions, and lockout status."
+45,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
+46,Permission Issue,Medium,A user promoted to a new role is being denied access to expected resources.,Review user's new role assignments and associated permissions.
+47,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
+48,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
+49,Application Bug,Medium,Search queries are returning irrelevant or incorrect results.,"Review search index, algorithm, and data sources."
+50,Security Issue,High,A user's password was changed without their initiation or knowledge.,"Immediately escalate to security team, investigate audit logs, and secure the account."
+51,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
+52,Application Bug,Medium,Users are unable to successfully use the export feature.,Examine export functionality logs and code.
+53,Authentication Issue,Medium,SMS One-Time Passcodes are experiencing significant delays in delivery.,"Check SMS gateway service status, message queues, and user's phone number."
+54,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
+55,Notification Issue,Medium,Users are not receiving notifications for pending approvals.,"Check notification service status, email/in-app delivery, and workflow configuration."
+56,Notification Issue,Low,Scheduled reminder emails are not being sent or received.,"Verify email sending service status, scheduled jobs, and recipient lists."
+57,Performance Issue,Medium,Search queries are taking an unusually long time to return results.,"Optimize search database queries, index performance, and server resources."
+58,Authentication Issue,Medium,Users are not receiving Multi-Factor Authentication codes.,"Check MFA service status, user's contact information, and delivery channels."
+59,Application Bug,Medium,Search queries are returning irrelevant or incorrect results.,"Review search index, algorithm, and data sources."
+60,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
+61,Application Bug,Medium,File uploads are failing with an unexpected exception.,"Investigate file upload service logs, storage permissions, and server capacity."
+62,Notification Issue,Medium,Users are not receiving notifications for pending approvals.,"Check notification service status, email/in-app delivery, and workflow configuration."
+63,Data Issue,Medium,The dashboard is displaying outdated information.,"Investigate data refresh mechanisms, caching, and data source synchronization."
+64,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
+65,UI Issue,Low,A user interface dropdown element is failing to open when clicked.,"Investigate frontend JavaScript, CSS, and component rendering."
+66,Authentication Issue,Medium,"After attempting to sign in, the login page simply refreshes without logging the user in.","Investigate authentication flow, session management, and potential redirect issues."
+67,Performance Issue,High,The application becomes unresponsive or freezes during periods of high usage.,"Conduct load testing, optimize database queries, and scale infrastructure."
+68,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
+69,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
+70,Application Bug,High,The API is consistently returning internal server (500) errors.,Escalate to backend development team for immediate investigation of server logs and service health.
+71,Authentication Issue,High,A user is unable to log in even after successfully resetting their password.,"Investigate account status, password reset flow, and authentication service logs."
+72,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
+73,Performance Issue,Medium,The dashboard is experiencing significant delays in loading.,"Investigate backend queries, network latency, and server performance."
+74,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
+75,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
+76,Notification Issue,Medium,Push notifications are no longer being delivered to users.,"Check notification service status, device tokens, and backend push logic."
+77,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
+78,Notification Issue,Medium,Users are not receiving notifications for pending approvals.,"Check notification service status, email/in-app delivery, and workflow configuration."
+79,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
+80,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
+81,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
+82,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
+83,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
+84,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
+85,Integration Issue,High,The integration with the ERP system is experiencing timeouts.,"Investigate network connectivity, ERP system performance, and integration service logs."
+86,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
+87,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
+88,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
+89,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
+90,Permission Issue,Medium,A newly onboarded user is missing their assigned roles and permissions.,Verify onboarding process and role assignment configuration.
+91,Performance Issue,High,"The application is experiencing high CPU usage, leading to significant system lag.","Monitor system resources, identify resource-intensive processes, and optimize code/infrastructure."
+92,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
+93,Security Issue,High,A user's password was changed without their initiation or knowledge.,"Immediately escalate to security team, investigate audit logs, and secure the account."
+94,Performance Issue,High,The application becomes unresponsive or freezes during periods of high usage.,"Conduct load testing, optimize database queries, and scale infrastructure."
+95,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
+96,Performance Issue,High,"The application is experiencing high CPU usage, leading to significant system lag.","Monitor system resources, identify resource-intensive processes, and optimize code/infrastructure."
+97,Data Issue,Medium,The dashboard is displaying outdated information.,"Investigate data refresh mechanisms, caching, and data source synchronization."
+98,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
+99,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
+100,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
+101,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
+102,Authentication Issue,Medium,Password reset links are expiring too quickly or immediately upon generation.,Review password reset link validity period configuration and generation process.
+103,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
+104,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
+105,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
+106,Authentication Issue,Medium,Password reset links are expiring too quickly or immediately upon generation.,Review password reset link validity period configuration and generation process.
+107,Application Bug,High,The API is consistently returning internal server (500) errors.,Escalate to backend development team for immediate investigation of server logs and service health.
+108,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
+109,Notification Issue,Medium,Push notifications are no longer being delivered to users.,"Check notification service status, device tokens, and backend push logic."
+110,Application Bug,Medium,"Clicking the save button results in an unknown error, preventing data from being saved.","Investigate frontend event handlers, backend API endpoint for saving, and server logs."
+111,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
+112,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
+113,Authentication Issue,Medium,"After attempting to sign in, the login page simply refreshes without logging the user in.","Investigate authentication flow, session management, and potential redirect issues."
+114,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
+115,Application Bug,Medium,File uploads are failing with an unexpected exception.,"Investigate file upload service logs, storage permissions, and server capacity."
+116,UI Issue,Low,A user interface dropdown element is failing to open when clicked.,"Investigate frontend JavaScript, CSS, and component rendering."
+117,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
+118,Data Issue,Medium,The dashboard is displaying outdated information.,"Investigate data refresh mechanisms, caching, and data source synchronization."
+119,Permission Issue,Medium,A specific user or group is unable to edit records they should have access to.,"Check user's permissions, role assignments, and record ownership."
+120,Permission Issue,Medium,A user promoted to a new role is being denied access to expected resources.,Review user's new role assignments and associated permissions.

@@ -1,7 +1,7 @@
 import pandas as pd
 import random
 
-NUM_TICKETS = 60
+NUM_TICKETS = 120
 
 TEMPLATES = {
     "Authentication Issue": [

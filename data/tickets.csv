@@ -1,61 +1,121 @@
 ticket_id,ticket,expected_category
-1,Application freezes during peak hours.,Performance Issue
-2,Access denied after promotion.,Permission Issue
-3,API returns 500 error.,Integration Issue
-4,Unexpected password change.,Security Issue
-5,File upload ends with exception.,Application Bug
-6,Role assignment missing after onboarding.,Account Access
-7,ERP integration timeout.,Integration Issue
-8,Password reset link expired.,Authentication Issue
-9,Role permissions missing.,Permission Issue
-10,Approval notifications fail.,Notification Issue
-11,CRM sync failed.,Integration Issue
-12,API returns 500 error.,Integration Issue
-13,Search response is delayed.,Performance Issue
-14,Account disabled unexpectedly.,Account Access
-15,Role permissions missing.,Permission Issue
+1,Text overlaps on dashboard.,UI Issue
+2,Security alert triggered.,Security Issue
+3,Layout broken on mobile.,UI Issue
+4,Duplicate entries created.,Data Issue
+5,Export feature fails.,Application Bug
+6,Report totals are incorrect.,Data Issue
+7,Layout broken on mobile.,UI Issue
+8,Dashboard loads very slowly.,Performance Issue
+9,Search returns incorrect results.,Application Bug
+10,Account disabled unexpectedly.,Account Access
+11,Recent updates not visible.,Data Issue
+12,Unexpected password change.,Security Issue
+13,Invalid session token prevents login.,Authentication Issue
+14,Possible phishing email reported.,Security Issue
+15,Account disabled unexpectedly.,Account Access
 16,Role assignment missing after onboarding.,Account Access
-17,Push notifications stopped working.,Notification Issue
-18,Webhook not triggering.,Integration Issue
-19,Customer records missing.,Data Issue
-20,Reminder emails missing.,Notification Issue
-21,Suspicious login detected.,Security Issue
-22,Role assignment missing after onboarding.,Account Access
-23,Button not clickable.,UI Issue
-24,Email alerts not received.,Notification Issue
-25,Dashboard shows stale data.,Data Issue
-26,Admin page access denied.,Permission Issue
-27,High CPU usage causes lag.,Performance Issue
-28,App crashes when opening settings.,Application Bug
-29,Reports take too long to generate.,Performance Issue
-30,MFA code not received.,Authentication Issue
-31,API returns 500 error.,Integration Issue
-32,Search returns incorrect results.,Application Bug
-33,Text overlaps on dashboard.,UI Issue
-34,App crashes when opening settings.,Application Bug
-35,Recent updates not visible.,Data Issue
-36,SMS OTP delayed.,Notification Issue
-37,Role assignment missing after onboarding.,Account Access
-38,Email alerts not received.,Notification Issue
-39,Dropdown not opening.,UI Issue
-40,Application freezes during peak hours.,Performance Issue
-41,Payment gateway authentication failed.,Integration Issue
+17,Account disabled unexpectedly.,Account Access
+18,Role permissions missing.,Permission Issue
+19,Export feature fails.,Application Bug
+20,Report totals are incorrect.,Data Issue
+21,User cannot edit records.,Permission Issue
+22,Account disabled unexpectedly.,Account Access
+23,API returns 500 error.,Integration Issue
+24,Push notifications stopped working.,Notification Issue
+25,Suspicious login detected.,Security Issue
+26,High CPU usage causes lag.,Performance Issue
+27,CRM sync failed.,Integration Issue
+28,Access denied after promotion.,Permission Issue
+29,Role assignment missing after onboarding.,Account Access
+30,SMS OTP delayed.,Notification Issue
+31,Admin page access denied.,Permission Issue
+32,Password reset link expired.,Authentication Issue
+33,Webhook not triggering.,Integration Issue
+34,Manager cannot approve requests.,Permission Issue
+35,File upload ends with exception.,Application Bug
+36,Duplicate entries created.,Data Issue
+37,Payment gateway authentication failed.,Integration Issue
+38,User cannot edit records.,Permission Issue
+39,CRM sync failed.,Integration Issue
+40,MFA code not received.,Authentication Issue
+41,Dark mode icons invisible.,UI Issue
 42,User cannot log in after resetting password.,Authentication Issue
-43,Dark mode icons invisible.,UI Issue
-44,Password reset link expired.,Authentication Issue
-45,Push notifications stopped working.,Notification Issue
-46,Account locked after failed attempts.,Account Access
-47,Access denied after promotion.,Permission Issue
-48,Manager cannot approve requests.,Permission Issue
-49,Admin page access denied.,Permission Issue
-50,Layout broken on mobile.,UI Issue
-51,Button not clickable.,UI Issue
-52,Password reset link expired.,Authentication Issue
-53,Layout broken on mobile.,UI Issue
-54,SMS OTP delayed.,Notification Issue
-55,Text overlaps on dashboard.,UI Issue
-56,Shared account inaccessible.,Account Access
-57,MFA code not received.,Authentication Issue
-58,User cannot edit records.,Permission Issue
-59,Text overlaps on dashboard.,UI Issue
-60,Role permissions missing.,Permission Issue
+43,Application freezes during peak hours.,Performance Issue
+44,Shared account inaccessible.,Account Access
+45,Manager cannot approve requests.,Permission Issue
+46,Access denied after promotion.,Permission Issue
+47,Role permissions missing.,Permission Issue
+48,Webhook not triggering.,Integration Issue
+49,Search returns incorrect results.,Application Bug
+50,Unexpected password change.,Security Issue
+51,Manager cannot approve requests.,Permission Issue
+52,Export feature fails.,Application Bug
+53,SMS OTP delayed.,Notification Issue
+54,Account disabled unexpectedly.,Account Access
+55,Approval notifications fail.,Notification Issue
+56,Reminder emails missing.,Notification Issue
+57,Search response is delayed.,Performance Issue
+58,MFA code not received.,Authentication Issue
+59,Search returns incorrect results.,Application Bug
+60,Security alert triggered.,Security Issue
+61,File upload ends with exception.,Application Bug
+62,Approval notifications fail.,Notification Issue
+63,Dashboard shows stale data.,Data Issue
+64,Dark mode icons invisible.,UI Issue
+65,Dropdown not opening.,UI Issue
+66,Login page refreshes after sign in.,Authentication Issue
+67,Application freezes during peak hours.,Performance Issue
+68,Manager cannot approve requests.,Permission Issue
+69,Layout broken on mobile.,UI Issue
+70,API returns 500 error.,Integration Issue
+71,User cannot log in after resetting password.,Authentication Issue
+72,Invalid session token prevents login.,Authentication Issue
+73,Dashboard loads very slowly.,Performance Issue
+74,Possible phishing email reported.,Security Issue
+75,Text overlaps on dashboard.,UI Issue
+76,Push notifications stopped working.,Notification Issue
+77,Possible phishing email reported.,Security Issue
+78,Approval notifications fail.,Notification Issue
+79,Role permissions missing.,Permission Issue
+80,Layout broken on mobile.,UI Issue
+81,CRM sync failed.,Integration Issue
+82,Manager cannot approve requests.,Permission Issue
+83,Text overlaps on dashboard.,UI Issue
+84,Dark mode icons invisible.,UI Issue
+85,ERP integration timeout.,Integration Issue
+86,Text overlaps on dashboard.,UI Issue
+87,Reports take too long to generate.,Performance Issue
+88,Dark mode icons invisible.,UI Issue
+89,Security alert triggered.,Security Issue
+90,Role assignment missing after onboarding.,Account Access
+91,High CPU usage causes lag.,Performance Issue
+92,Reports take too long to generate.,Performance Issue
+93,Unexpected password change.,Security Issue
+94,Application freezes during peak hours.,Performance Issue
+95,Security alert triggered.,Security Issue
+96,High CPU usage causes lag.,Performance Issue
+97,Dashboard shows stale data.,Data Issue
+98,Reports take too long to generate.,Performance Issue
+99,Possible phishing email reported.,Security Issue
+100,Invalid session token prevents login.,Authentication Issue
+101,Role permissions missing.,Permission Issue
+102,Password reset link expired.,Authentication Issue
+103,Webhook not triggering.,Integration Issue
+104,Invalid session token prevents login.,Authentication Issue
+105,Webhook not triggering.,Integration Issue
+106,Password reset link expired.,Authentication Issue
+107,API returns 500 error.,Integration Issue
+108,Invalid session token prevents login.,Authentication Issue
+109,Push notifications stopped working.,Notification Issue
+110,Save button throws unknown error.,Application Bug
+111,Possible phishing email reported.,Security Issue
+112,Reports take too long to generate.,Performance Issue
+113,Login page refreshes after sign in.,Authentication Issue
+114,CRM sync failed.,Integration Issue
+115,File upload ends with exception.,Application Bug
+116,Dropdown not opening.,UI Issue
+117,Security alert triggered.,Security Issue
+118,Dashboard shows stale data.,Data Issue
+119,User cannot edit records.,Permission Issue
+120,Access denied after promotion.,Permission Issue
