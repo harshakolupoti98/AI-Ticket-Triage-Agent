@@ -1,121 +1,1081 @@
-ticket_id,category,priority,summary,suggested_action
-1,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
-2,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
-3,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
-4,Application Bug,Medium,System is creating duplicate entries for records.,Investigate data creation process and database integrity.
-5,Application Bug,Medium,Users are unable to successfully use the export feature.,Examine export functionality logs and code.
-6,Data Issue,Medium,Generated reports display incorrect aggregated totals.,Review report generation logic and data aggregation queries.
-7,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
-8,Performance Issue,Medium,The dashboard is experiencing significant delays in loading.,"Investigate backend queries, network latency, and server performance."
-9,Application Bug,Medium,Search queries are returning irrelevant or incorrect results.,"Review search index, algorithm, and data sources."
-10,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
-11,Application Bug,Medium,Recently made updates are not appearing in the user interface.,"Check data synchronization, caching mechanisms, and UI refresh logic."
-12,Security Issue,High,A user's password was changed without their initiation or knowledge.,"Immediately escalate to security team, investigate audit logs, and secure the account."
-13,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
-14,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
-15,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
-16,Permission Issue,Medium,A newly onboarded user is missing their assigned roles and permissions.,Verify onboarding process and role assignment configuration.
-17,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
-18,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
-19,Application Bug,Medium,Users are unable to successfully use the export feature.,Examine export functionality logs and code.
-20,Data Issue,Medium,Generated reports display incorrect aggregated totals.,Review report generation logic and data aggregation queries.
-21,Permission Issue,Medium,A specific user or group is unable to edit records they should have access to.,"Check user's permissions, role assignments, and record ownership."
-22,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
-23,Application Bug,High,The API is consistently returning internal server (500) errors.,Escalate to backend development team for immediate investigation of server logs and service health.
-24,Notification Issue,Medium,Push notifications are no longer being delivered to users.,"Check notification service status, device tokens, and backend push logic."
-25,Security Issue,High,The system has detected a suspicious login attempt or successful login.,"Immediately escalate to security team, investigate login details, and user account activity."
-26,Performance Issue,High,"The application is experiencing high CPU usage, leading to significant system lag.","Monitor system resources, identify resource-intensive processes, and optimize code/infrastructure."
-27,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
-28,Permission Issue,Medium,A user promoted to a new role is being denied access to expected resources.,Review user's new role assignments and associated permissions.
-29,Permission Issue,Medium,A newly onboarded user is missing their assigned roles and permissions.,Verify onboarding process and role assignment configuration.
-30,Authentication Issue,Medium,SMS One-Time Passcodes are experiencing significant delays in delivery.,"Check SMS gateway service status, message queues, and user's phone number."
-31,Permission Issue,High,An authorized administrator is unable to access the admin page.,"Verify administrator's roles, permissions, and audit any recent changes to access control."
-32,Authentication Issue,Medium,Password reset links are expiring too quickly or immediately upon generation.,Review password reset link validity period configuration and generation process.
-33,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
-34,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
-35,Application Bug,Medium,File uploads are failing with an unexpected exception.,"Investigate file upload service logs, storage permissions, and server capacity."
-36,Application Bug,Medium,System is creating duplicate entries for records.,Investigate data creation process and database integrity.
-37,Integration Issue,High,The system is failing to authenticate with the payment gateway.,"Verify payment gateway credentials, API keys, and network connectivity."
-38,Permission Issue,Medium,A specific user or group is unable to edit records they should have access to.,"Check user's permissions, role assignments, and record ownership."
-39,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
-40,Authentication Issue,Medium,Users are not receiving Multi-Factor Authentication codes.,"Check MFA service status, user's contact information, and delivery channels."
-41,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
-42,Authentication Issue,High,A user is unable to log in even after successfully resetting their password.,"Investigate account status, password reset flow, and authentication service logs."
-43,Performance Issue,High,The application becomes unresponsive or freezes during periods of high usage.,"Conduct load testing, optimize database queries, and scale infrastructure."
-44,Account Access,Medium,A shared account required by multiple users is currently inaccessible.,"Investigate shared account credentials, permissions, and lockout status."
-45,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
-46,Permission Issue,Medium,A user promoted to a new role is being denied access to expected resources.,Review user's new role assignments and associated permissions.
-47,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
-48,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
-49,Application Bug,Medium,Search queries are returning irrelevant or incorrect results.,"Review search index, algorithm, and data sources."
-50,Security Issue,High,A user's password was changed without their initiation or knowledge.,"Immediately escalate to security team, investigate audit logs, and secure the account."
-51,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
-52,Application Bug,Medium,Users are unable to successfully use the export feature.,Examine export functionality logs and code.
-53,Authentication Issue,Medium,SMS One-Time Passcodes are experiencing significant delays in delivery.,"Check SMS gateway service status, message queues, and user's phone number."
-54,Account Access,High,User's account has been disabled without warning or reason.,"Investigate account status, audit logs for disabling event, and re-enable if appropriate."
-55,Notification Issue,Medium,Users are not receiving notifications for pending approvals.,"Check notification service status, email/in-app delivery, and workflow configuration."
-56,Notification Issue,Low,Scheduled reminder emails are not being sent or received.,"Verify email sending service status, scheduled jobs, and recipient lists."
-57,Performance Issue,Medium,Search queries are taking an unusually long time to return results.,"Optimize search database queries, index performance, and server resources."
-58,Authentication Issue,Medium,Users are not receiving Multi-Factor Authentication codes.,"Check MFA service status, user's contact information, and delivery channels."
-59,Application Bug,Medium,Search queries are returning irrelevant or incorrect results.,"Review search index, algorithm, and data sources."
-60,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
-61,Application Bug,Medium,File uploads are failing with an unexpected exception.,"Investigate file upload service logs, storage permissions, and server capacity."
-62,Notification Issue,Medium,Users are not receiving notifications for pending approvals.,"Check notification service status, email/in-app delivery, and workflow configuration."
-63,Data Issue,Medium,The dashboard is displaying outdated information.,"Investigate data refresh mechanisms, caching, and data source synchronization."
-64,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
-65,UI Issue,Low,A user interface dropdown element is failing to open when clicked.,"Investigate frontend JavaScript, CSS, and component rendering."
-66,Authentication Issue,Medium,"After attempting to sign in, the login page simply refreshes without logging the user in.","Investigate authentication flow, session management, and potential redirect issues."
-67,Performance Issue,High,The application becomes unresponsive or freezes during periods of high usage.,"Conduct load testing, optimize database queries, and scale infrastructure."
-68,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
-69,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
-70,Application Bug,High,The API is consistently returning internal server (500) errors.,Escalate to backend development team for immediate investigation of server logs and service health.
-71,Authentication Issue,High,A user is unable to log in even after successfully resetting their password.,"Investigate account status, password reset flow, and authentication service logs."
-72,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
-73,Performance Issue,Medium,The dashboard is experiencing significant delays in loading.,"Investigate backend queries, network latency, and server performance."
-74,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
-75,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
-76,Notification Issue,Medium,Push notifications are no longer being delivered to users.,"Check notification service status, device tokens, and backend push logic."
-77,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
-78,Notification Issue,Medium,Users are not receiving notifications for pending approvals.,"Check notification service status, email/in-app delivery, and workflow configuration."
-79,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
-80,UI Issue,Medium,Mobile application layout is rendering incorrectly.,Assign to frontend development team for mobile responsiveness check.
-81,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
-82,Permission Issue,Medium,A manager is unable to approve requests despite having the necessary permissions.,"Review manager's role, associated approval permissions, and workflow configuration."
-83,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
-84,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
-85,Integration Issue,High,The integration with the ERP system is experiencing timeouts.,"Investigate network connectivity, ERP system performance, and integration service logs."
-86,UI Issue,Low,"Dashboard text rendering incorrectly, leading to overlaps.",Forward to UI/UX team for investigation.
-87,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
-88,UI Issue,Low,"Icons in dark mode are not visible, possibly due to color contrast issues.",Forward to UI/UX team for dark mode styling review.
-89,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
-90,Permission Issue,Medium,A newly onboarded user is missing their assigned roles and permissions.,Verify onboarding process and role assignment configuration.
-91,Performance Issue,High,"The application is experiencing high CPU usage, leading to significant system lag.","Monitor system resources, identify resource-intensive processes, and optimize code/infrastructure."
-92,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
-93,Security Issue,High,A user's password was changed without their initiation or knowledge.,"Immediately escalate to security team, investigate audit logs, and secure the account."
-94,Performance Issue,High,The application becomes unresponsive or freezes during periods of high usage.,"Conduct load testing, optimize database queries, and scale infrastructure."
-95,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
-96,Performance Issue,High,"The application is experiencing high CPU usage, leading to significant system lag.","Monitor system resources, identify resource-intensive processes, and optimize code/infrastructure."
-97,Data Issue,Medium,The dashboard is displaying outdated information.,"Investigate data refresh mechanisms, caching, and data source synchronization."
-98,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
-99,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
-100,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
-101,Permission Issue,Medium,A user's assigned role is missing specific permissions.,"Review user's role, permissions configuration, and group assignments."
-102,Authentication Issue,Medium,Password reset links are expiring too quickly or immediately upon generation.,Review password reset link validity period configuration and generation process.
-103,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
-104,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
-105,Integration Issue,Medium,Configured webhooks are not being triggered as expected.,"Check webhook configuration, event logs, and endpoint availability."
-106,Authentication Issue,Medium,Password reset links are expiring too quickly or immediately upon generation.,Review password reset link validity period configuration and generation process.
-107,Application Bug,High,The API is consistently returning internal server (500) errors.,Escalate to backend development team for immediate investigation of server logs and service health.
-108,Authentication Issue,High,Users are unable to log in due to invalid session token errors.,"Investigate session management, token generation, and authentication service."
-109,Notification Issue,Medium,Push notifications are no longer being delivered to users.,"Check notification service status, device tokens, and backend push logic."
-110,Application Bug,Medium,"Clicking the save button results in an unknown error, preventing data from being saved.","Investigate frontend event handlers, backend API endpoint for saving, and server logs."
-111,Security Issue,High,A user has reported receiving a suspicious email potentially attempting phishing.,Escalate to security team for analysis and user guidance.
-112,Performance Issue,Medium,Report generation is experiencing significant delays.,"Optimize report queries, database performance, and reporting service resources."
-113,Authentication Issue,Medium,"After attempting to sign in, the login page simply refreshes without logging the user in.","Investigate authentication flow, session management, and potential redirect issues."
-114,Integration Issue,Medium,The synchronization process with the CRM system has failed.,"Check integration logs, API credentials, and network connectivity between systems."
-115,Application Bug,Medium,File uploads are failing with an unexpected exception.,"Investigate file upload service logs, storage permissions, and server capacity."
-116,UI Issue,Low,A user interface dropdown element is failing to open when clicked.,"Investigate frontend JavaScript, CSS, and component rendering."
-117,Security Issue,High,A security alert has been triggered within the system.,Immediately escalate to the security incident response team.
-118,Data Issue,Medium,The dashboard is displaying outdated information.,"Investigate data refresh mechanisms, caching, and data source synchronization."
-119,Permission Issue,Medium,A specific user or group is unable to edit records they should have access to.,"Check user's permissions, role assignments, and record ownership."
-120,Permission Issue,Medium,A user promoted to a new role is being denied access to expected resources.,Review user's new role assignments and associated permissions.
+ticket_id,Ticket,category,priority,summary,suggested_action
+1,"record_id: REC-1001
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Web App
+support_channel: Mobile App
+issue_text: Application crashes when opening the analytics page.
+reported_impact: High business impact
+current_status: Pending
+created_at: 2026-06-08 04:47",Application Bug,High,Application crashes when opening the analytics page.,Investigate application logs for crash details.
+2,"record_id: REC-1002
+customer_name: Priya Reddy
+customer_email: priya.reddy@example.com
+product_area: Mobile App
+support_channel: Slack
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-01 02:13",Permission Issue,High,User permissions not updating correctly after role change.,Verify user's new role and assigned permissions in the admin panel.
+3,"record_id: REC-1003
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Web App
+support_channel: Slack
+issue_text: Customer records are duplicated after importing a CSV file.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-14 07:28",Data Issue,Medium,Customer records are duplicated after importing a CSV file.,Examine CSV import logs and data processing routines for duplication causes.
+4,"record_id: REC-1004
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Web App
+support_channel: Chat
+issue_text: User cannot export the report as a PDF file.
+reported_impact: Medium impact
+current_status: In Review
+created_at: 2026-06-09 04:13",Application Bug,Medium,User cannot export reports as a PDF file.,Check browser console for errors and verify report generation service status.
+5,"record_id: REC-1005
+customer_name: Sanjay Joshi
+customer_email: sanjay.joshi@example.com
+product_area: Mobile App
+support_channel: Email
+issue_text: Admin user cannot access the settings page despite having permissions.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-12 11:38",Permission Issue,High,Admin user cannot access the settings page despite having permissions.,Review admin user's specific permissions and check for recent configuration changes.
+6,"record_id: REC-1006
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Notification Service
+support_channel: Slack
+issue_text: Two-factor authentication code is not arriving on the registered mobile number.
+reported_impact: Low impact
+current_status: Open
+created_at: 2026-06-03 17:18",Authentication Issue,Low,Two-factor authentication code is not arriving on the registered mobile number.,Verify registered mobile number and check notification service logs.
+7,"record_id: REC-1007
+customer_name: Pooja Shah
+customer_email: pooja.shah@example.com
+product_area: Reporting Tool
+support_channel: Slack
+issue_text: Approval request is stuck and manager cannot approve it.
+reported_impact: User blocked
+current_status: New
+created_at: 2026-06-02 21:14",Application Bug,High,Approval request is stuck and manager cannot approve it.,Investigate the approval workflow status and associated logs.
+8,"record_id: REC-1008
+customer_name: Sanjay Joshi
+customer_email: sanjay.joshi@example.com
+product_area: Mobile App
+support_channel: Chat
+issue_text: Search results are not showing the expected records.
+reported_impact: Low impact
+current_status: Open
+created_at: 2026-06-09 14:40",Application Bug,Low,Search results are not showing the expected records.,Check search index status and recent data updates.
+9,"record_id: REC-1009
+customer_name: Pooja Shah
+customer_email: pooja.shah@example.com
+product_area: Analytics Dashboard
+support_channel: Phone
+issue_text: API integration with third-party CRM is returning a 500 error.
+reported_impact: High business impact
+current_status: Pending
+created_at: 2026-06-22 08:44",Integration Issue,High,API integration with third-party CRM is returning a 500 error.,Review API integration logs and third-party CRM status for errors.
+10,"record_id: REC-1010
+customer_name: Nikhil Jain
+customer_email: nikhil.jain@example.com
+product_area: Mobile App
+support_channel: Slack
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-24 07:10",Permission Issue,Medium,User permissions not updating correctly after role change intermittently.,Verify user's new role and assigned permissions in the admin panel and monitor for recurrence.
+11,"record_id: REC-1011
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Admin Panel
+support_channel: Mobile App
+issue_text: Mobile layout is broken and buttons overlap on smaller screens.
+reported_impact: Medium impact
+current_status: New
+created_at: 2026-06-27 01:14",UI Issue,Medium,Mobile layout is broken with overlapping buttons on smaller screens.,Test on various smaller screen devices/emulators and inspect CSS.
+12,"record_id: REC-1012
+customer_name: Pooja Shah
+customer_email: pooja.shah@example.com
+product_area: Reporting Tool
+support_channel: Web Form
+issue_text: Two-factor authentication code is not arriving on the registered mobile number.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-07 18:56",Authentication Issue,High,"Two-factor authentication code is not arriving, blocking user access.",Verify registered mobile number and check notification service logs; explore alternative authentication.
+13,"record_id: REC-1013
+customer_name: Divya Menon
+customer_email: divya.menon@example.com
+product_area: Payment Portal
+support_channel: Mobile App
+issue_text: Admin user cannot access the settings page despite having permissions.
+reported_impact: Low impact
+current_status: In Review
+created_at: 2026-06-21 14:09",Permission Issue,Low,Admin user cannot access the settings page despite having permissions.,Review admin user's specific permissions and check for recent configuration changes.
+14,"record_id: REC-1014
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Payment Portal
+support_channel: Mobile App
+issue_text: Payment failed but amount was deducted from the customer account.
+reported_impact: Intermittent issue
+current_status: Pending
+created_at: 2026-06-14 18:25",Billing Issue,High,Payment failed but amount was deducted from the customer account intermittently.,"Review payment gateway logs and transaction records, initiate refund process if necessary."
+15,"record_id: REC-1015
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Analytics Dashboard
+support_channel: Slack
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-25 01:55",Data Issue,High,Reports are showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+16,"record_id: REC-1016
+customer_name: Priya Reddy
+customer_email: priya.reddy@example.com
+product_area: Analytics Dashboard
+support_channel: Mobile App
+issue_text: Payment failed but amount was deducted from the customer account.
+reported_impact: Intermittent issue
+current_status: In Review
+created_at: 2026-06-03 12:24",Billing Issue,High,Payment failed but amount was deducted from the customer account intermittently.,"Review payment gateway logs and transaction records, initiate refund process if necessary."
+17,"record_id: REC-1017
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Admin Panel
+support_channel: Slack
+issue_text: User is unable to update account security settings.
+reported_impact: User blocked
+current_status: Open
+created_at: 2026-06-22 17:48",Security Issue,High,User is unable to update account security settings.,Verify user permissions related to security settings and check for system-wide security policies.
+18,"record_id: REC-1018
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Reporting Tool
+support_channel: Email
+issue_text: Data sync between systems is delayed by more than one hour.
+reported_impact: Low impact
+current_status: Pending
+created_at: 2026-06-06 14:00",Performance Issue,Low,Data sync between systems is delayed by more than one hour.,Check data sync service status and logs for bottlenecks or errors.
+19,"record_id: REC-1019
+customer_name: Divya Menon
+customer_email: divya.menon@example.com
+product_area: Admin Panel
+support_channel: Slack
+issue_text: Billing page shows the wrong subscription plan.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-04 20:19",Billing Issue,Medium,Billing page intermittently shows the wrong subscription plan.,Verify customer's actual subscription plan and review billing system data.
+20,"record_id: REC-1020
+customer_name: Pooja Shah
+customer_email: pooja.shah@example.com
+product_area: Payment Portal
+support_channel: Chat
+issue_text: Approval request is stuck and manager cannot approve it.
+reported_impact: High business impact
+current_status: Pending
+created_at: 2026-06-18 16:58",Application Bug,High,Approval request is stuck and manager cannot approve it.,Investigate the approval workflow status and associated logs.
+21,"record_id: REC-1021
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Reporting Tool
+support_channel: Web Form
+issue_text: Report generation freezes when selecting a large date range.
+reported_impact: User blocked
+current_status: Open
+created_at: 2026-06-12 09:15",Performance Issue,High,Report generation freezes when selecting a large date range.,Check resource utilization during report generation and optimize query/data processing.
+22,"record_id: REC-1022
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Mobile App
+support_channel: Email
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-25 17:49",Data Issue,High,Reports are showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+23,"record_id: REC-1023
+customer_name: Amit Verma
+customer_email: amit.verma@example.com
+product_area: Notification Service
+support_channel: Slack
+issue_text: Payment failed but amount was deducted from the customer account.
+reported_impact: Medium impact
+current_status: New
+created_at: 2026-06-17 19:27",Billing Issue,High,Payment failed but amount was deducted from the customer account.,"Review payment gateway logs and transaction records, initiate refund process if necessary."
+24,"record_id: REC-1024
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Payment Portal
+support_channel: Mobile App
+issue_text: Password reset link expires immediately after it is generated.
+reported_impact: Low impact
+current_status: Pending
+created_at: 2026-06-22 20:23",Authentication Issue,Low,Password reset link expires immediately after it is generated.,Check system time synchronization and password reset token validity settings.
+25,"record_id: REC-1025
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Notification Service
+support_channel: Email
+issue_text: Customer records are duplicated after importing a CSV file.
+reported_impact: High business impact
+current_status: New
+created_at: 2026-06-03 10:01",Data Issue,High,Customer records are duplicated after importing a CSV file.,Examine CSV import logs and data processing routines for duplication causes.
+26,"record_id: REC-1026
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Payment Portal
+support_channel: Slack
+issue_text: Password reset link expires immediately after it is generated.
+reported_impact: User blocked
+current_status: New
+created_at: 2026-06-03 22:40",Authentication Issue,High,"Password reset link expires immediately after it is generated, blocking user.","Check system time synchronization and password reset token validity settings, consider manual reset for user."
+27,"record_id: REC-1027
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Mobile App
+support_channel: Email
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-17 07:17",Data Issue,High,Reports are showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+28,"record_id: REC-1028
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Payment Portal
+support_channel: Slack
+issue_text: Webhook is not triggering after order confirmation.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-19 15:15",Integration Issue,Medium,Webhook is intermittently not triggering after order confirmation.,"Check webhook configuration, logs, and external service availability."
+29,"record_id: REC-1029
+customer_name: Sanjay Joshi
+customer_email: sanjay.joshi@example.com
+product_area: API Integration
+support_channel: Chat
+issue_text: Webhook is not triggering after order confirmation.
+reported_impact: User blocked
+current_status: Open
+created_at: 2026-06-22 13:22",Integration Issue,High,Webhook is not triggering after order confirmation.,"Check webhook configuration, logs, and external service availability, verify order confirmation process."
+30,"record_id: REC-1030
+customer_name: Arjun Patel
+customer_email: arjun.patel@example.com
+product_area: Notification Service
+support_channel: Mobile App
+issue_text: Suspicious login alert was triggered from an unknown device.
+reported_impact: User blocked
+current_status: Open
+created_at: 2026-06-02 12:46",Security Issue,High,Suspicious login alert was triggered from an unknown device.,"Initiate security protocol, advise user to change password, review login history."
+31,"record_id: REC-1031
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Payment Portal
+support_channel: Chat
+issue_text: Application crashes when opening the analytics page.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-15 04:27",Application Bug,Medium,Application intermittently crashes when opening the analytics page.,Investigate application logs for crash details and patterns.
+32,"record_id: REC-1032
+customer_name: Amit Verma
+customer_email: amit.verma@example.com
+product_area: Notification Service
+support_channel: Chat
+issue_text: User cannot export the report as a PDF file.
+reported_impact: Low impact
+current_status: Open
+created_at: 2026-06-26 17:06",Application Bug,Low,User cannot export reports as a PDF file.,Check browser console for errors and verify report generation service status.
+33,"record_id: REC-1033
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Web App
+support_channel: Email
+issue_text: Approval request is stuck and manager cannot approve it.
+reported_impact: High business impact
+current_status: New
+created_at: 2026-06-14 15:30",Application Bug,High,Approval request is stuck and manager cannot approve it.,Investigate the approval workflow status and associated logs.
+34,"record_id: REC-1034
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Web App
+support_channel: Chat
+issue_text: Mobile layout is broken and buttons overlap on smaller screens.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-13 08:59",UI Issue,High,"Mobile layout is broken with overlapping buttons on smaller screens, blocking user.",Test on various smaller screen devices/emulators and inspect CSS.
+35,"record_id: REC-1035
+customer_name: Sanjay Joshi
+customer_email: sanjay.joshi@example.com
+product_area: Admin Panel
+support_channel: Web Form
+issue_text: User is unable to update account security settings.
+reported_impact: High business impact
+current_status: In Review
+created_at: 2026-06-07 09:13",Security Issue,High,User is unable to update account security settings.,Verify user permissions related to security settings and check for system-wide security policies.
+36,"record_id: REC-1036
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Web App
+support_channel: Mobile App
+issue_text: Push notifications stopped working after the latest app update.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-02 18:30",Notification Issue,High,"Push notifications stopped working after the latest app update, blocking user.","Check notification service status, app version, and user device settings."
+37,"record_id: REC-1037
+customer_name: Vikram Singh
+customer_email: vikram.singh@example.com
+product_area: Analytics Dashboard
+support_channel: Email
+issue_text: Customer records are duplicated after importing a CSV file.
+reported_impact: High business impact
+current_status: Open
+created_at: 2026-06-03 19:04",Data Issue,High,Customer records are duplicated after importing a CSV file.,Examine CSV import logs and data processing routines for duplication causes.
+38,"record_id: REC-1038
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: API Integration
+support_channel: Email
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-20 01:39",Data Issue,Medium,Reports are intermittently showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+39,"record_id: REC-1039
+customer_name: Priya Reddy
+customer_email: priya.reddy@example.com
+product_area: Reporting Tool
+support_channel: Phone
+issue_text: Suspicious login alert was triggered from an unknown device.
+reported_impact: Medium impact
+current_status: New
+created_at: 2026-06-08 08:25",Security Issue,High,Suspicious login alert was triggered from an unknown device.,"Initiate security protocol, advise user to change password, review login history."
+40,"record_id: REC-1040
+customer_name: Amit Verma
+customer_email: amit.verma@example.com
+product_area: Admin Panel
+support_channel: Web Form
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-01 14:39",Permission Issue,High,"User permissions not updating correctly after role change, blocking user.",Verify user's new role and assigned permissions in the admin panel.
+41,"record_id: REC-1041
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Mobile App
+support_channel: Slack
+issue_text: Application crashes when opening the analytics page.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-09 04:59",Application Bug,Medium,Application intermittently crashes when opening the analytics page.,Investigate application logs for crash details and patterns.
+42,"record_id: REC-1042
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Payment Portal
+support_channel: Phone
+issue_text: Dashboard is loading very slowly and sometimes times out.
+reported_impact: High business impact
+current_status: Pending
+created_at: 2026-06-15 17:45",Performance Issue,High,Dashboard is loading very slowly and sometimes times out.,"Monitor server performance, database queries, and network latency."
+43,"record_id: REC-1043
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Web App
+support_channel: Mobile App
+issue_text: Report generation freezes when selecting a large date range.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-05 08:07",Performance Issue,High,Report generation freezes when selecting a large date range.,Check resource utilization during report generation and optimize query/data processing.
+44,"record_id: REC-1044
+customer_name: Nikhil Jain
+customer_email: nikhil.jain@example.com
+product_area: Analytics Dashboard
+support_channel: Phone
+issue_text: Application crashes when opening the analytics page.
+reported_impact: Intermittent issue
+current_status: Pending
+created_at: 2026-06-07 22:21",Application Bug,Medium,Application intermittently crashes when opening the analytics page.,Investigate application logs for crash details and patterns.
+45,"record_id: REC-1045
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Admin Panel
+support_channel: Slack
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: Medium impact
+current_status: In Review
+created_at: 2026-06-28 01:05",Permission Issue,Medium,User permissions not updating correctly after role change.,Verify user's new role and assigned permissions in the admin panel.
+46,"record_id: REC-1046
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Admin Panel
+support_channel: Email
+issue_text: Suspicious login alert was triggered from an unknown device.
+reported_impact: Medium impact
+current_status: Open
+created_at: 2026-06-25 04:40",Security Issue,High,Suspicious login alert was triggered from an unknown device.,"Initiate security protocol, advise user to change password, review login history."
+47,"record_id: REC-1047
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Notification Service
+support_channel: Slack
+issue_text: Email notifications are not being delivered for new alerts.
+reported_impact: Intermittent issue
+current_status: In Review
+created_at: 2026-06-01 03:04",Notification Issue,Medium,Email notifications are intermittently not being delivered for new alerts.,Check notification service logs and email delivery status.
+48,"record_id: REC-1048
+customer_name: Nikhil Jain
+customer_email: nikhil.jain@example.com
+product_area: Analytics Dashboard
+support_channel: Slack
+issue_text: Invoice download button is not responding.
+reported_impact: Medium impact
+current_status: Open
+created_at: 2026-06-19 17:09",Application Bug,Medium,Invoice download button is not responding.,Check browser console for errors and verify backend service for invoice generation.
+49,"record_id: REC-1049
+customer_name: Arjun Patel
+customer_email: arjun.patel@example.com
+product_area: Web App
+support_channel: Phone
+issue_text: Payment failed but amount was deducted from the customer account.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-12 06:43",Billing Issue,High,Payment failed but amount was deducted from the customer account.,"Review payment gateway logs and transaction records, initiate refund process if necessary."
+50,"record_id: REC-1050
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Mobile App
+support_channel: Phone
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: Intermittent issue
+current_status: In Review
+created_at: 2026-06-24 04:59",Permission Issue,Medium,User permissions not updating correctly after role change intermittently.,Verify user's new role and assigned permissions in the admin panel and monitor for recurrence.
+51,"record_id: REC-1051
+customer_name: Nikhil Jain
+customer_email: nikhil.jain@example.com
+product_area: Analytics Dashboard
+support_channel: Chat
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-06 23:59",Data Issue,High,Reports are showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+52,"record_id: REC-1052
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Payment Portal
+support_channel: Phone
+issue_text: Suspicious login alert was triggered from an unknown device.
+reported_impact: User blocked
+current_status: New
+created_at: 2026-06-13 01:54",Security Issue,High,Suspicious login alert was triggered from an unknown device.,"Initiate security protocol, advise user to change password, review login history."
+53,"record_id: REC-1053
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Payment Portal
+support_channel: Web Form
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: Medium impact
+current_status: Pending
+created_at: 2026-06-27 07:14",Data Issue,Medium,Reports are showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+54,"record_id: REC-1054
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Payment Portal
+support_channel: Web Form
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: Medium impact
+current_status: Pending
+created_at: 2026-06-28 02:49",Permission Issue,Medium,User permissions not updating correctly after role change.,Verify user's new role and assigned permissions in the admin panel.
+55,"record_id: REC-1055
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: API Integration
+support_channel: Mobile App
+issue_text: API integration with third-party CRM is returning a 500 error.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-04 08:11",Integration Issue,High,API integration with third-party CRM is returning a 500 error.,Review API integration logs and third-party CRM status for errors.
+56,"record_id: REC-1056
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Web App
+support_channel: Email
+issue_text: User cannot export the report as a PDF file.
+reported_impact: Medium impact
+current_status: In Review
+created_at: 2026-06-24 10:27",Application Bug,Medium,User cannot export reports as a PDF file.,Check browser console for errors and verify report generation service status.
+57,"record_id: REC-1057
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Mobile App
+support_channel: Web Form
+issue_text: Customer records are duplicated after importing a CSV file.
+reported_impact: Medium impact
+current_status: New
+created_at: 2026-06-02 22:27",Data Issue,Medium,Customer records are duplicated after importing a CSV file.,Examine CSV import logs and data processing routines for duplication causes.
+58,"record_id: REC-1058
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Payment Portal
+support_channel: Phone
+issue_text: Customer records are duplicated after importing a CSV file.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-22 10:39",Data Issue,High,Customer records are duplicated after importing a CSV file.,Examine CSV import logs and data processing routines for duplication causes.
+59,"record_id: REC-1059
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Mobile App
+support_channel: Mobile App
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: Intermittent issue
+current_status: Pending
+created_at: 2026-06-10 21:26",Permission Issue,Medium,User permissions not updating correctly after role change intermittently.,Verify user's new role and assigned permissions in the admin panel and monitor for recurrence.
+60,"record_id: REC-1060
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Admin Panel
+support_channel: Slack
+issue_text: Mobile layout is broken and buttons overlap on smaller screens.
+reported_impact: High business impact
+current_status: New
+created_at: 2026-06-14 21:24",UI Issue,High,Mobile layout is broken with overlapping buttons on smaller screens.,Test on various smaller screen devices/emulators and inspect CSS.
+61,"record_id: REC-1061
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Analytics Dashboard
+support_channel: Slack
+issue_text: Billing page shows the wrong subscription plan.
+reported_impact: Low impact
+current_status: Pending
+created_at: 2026-06-18 00:19",Billing Issue,Low,Billing page shows the wrong subscription plan.,Verify customer's actual subscription plan and review billing system data.
+62,"record_id: REC-1062
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: API Integration
+support_channel: Slack
+issue_text: Uploaded documents are missing from the customer profile.
+reported_impact: Low impact
+current_status: Pending
+created_at: 2026-06-15 14:43",Data Issue,Low,Uploaded documents are missing from the customer profile.,"Check document storage, database records for file paths, and upload process logs."
+63,"record_id: REC-1063
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Notification Service
+support_channel: Mobile App
+issue_text: Customer records are duplicated after importing a CSV file.
+reported_impact: User blocked
+current_status: New
+created_at: 2026-06-10 16:42",Data Issue,High,Customer records are duplicated after importing a CSV file.,Examine CSV import logs and data processing routines for duplication causes.
+64,"record_id: REC-1064
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Reporting Tool
+support_channel: Email
+issue_text: Report generation freezes when selecting a large date range.
+reported_impact: Medium impact
+current_status: New
+created_at: 2026-06-08 06:09",Performance Issue,Medium,Report generation freezes when selecting a large date range.,Check resource utilization during report generation and optimize query/data processing.
+65,"record_id: REC-1065
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Payment Portal
+support_channel: Web Form
+issue_text: Two-factor authentication code is not arriving on the registered mobile number.
+reported_impact: Low impact
+current_status: Open
+created_at: 2026-06-14 20:36",Authentication Issue,Low,Two-factor authentication code is not arriving on the registered mobile number.,Verify registered mobile number and check notification service logs.
+66,"record_id: REC-1066
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: API Integration
+support_channel: Web Form
+issue_text: Invoice download button is not responding.
+reported_impact: High business impact
+current_status: In Review
+created_at: 2026-06-05 20:44",Application Bug,High,Invoice download button is not responding.,Check browser console for errors and verify backend service for invoice generation.
+67,"record_id: REC-1067
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Mobile App
+support_channel: Web Form
+issue_text: Data sync between systems is delayed by more than one hour.
+reported_impact: High business impact
+current_status: New
+created_at: 2026-06-26 22:33",Performance Issue,High,Data synchronization between systems is delayed by more than one hour.,Check data sync service status and logs for bottlenecks or errors.
+68,"record_id: REC-1068
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Payment Portal
+support_channel: Email
+issue_text: Two-factor authentication code is not arriving on the registered mobile number.
+reported_impact: High business impact
+current_status: In Review
+created_at: 2026-06-26 14:42",Authentication Issue,High,"Two-factor authentication code is not arriving on the registered mobile number, impacting business.",Verify registered mobile number and check notification service logs; explore alternative authentication.
+69,"record_id: REC-1069
+customer_name: Vikram Singh
+customer_email: vikram.singh@example.com
+product_area: Reporting Tool
+support_channel: Web Form
+issue_text: Password reset link expires immediately after it is generated.
+reported_impact: Intermittent issue
+current_status: In Review
+created_at: 2026-06-15 05:47",Authentication Issue,Medium,Password reset link expires immediately after it is generated intermittently.,Check system time synchronization and password reset token validity settings.
+70,"record_id: REC-1070
+customer_name: Pooja Shah
+customer_email: pooja.shah@example.com
+product_area: Notification Service
+support_channel: Phone
+issue_text: Webhook is not triggering after order confirmation.
+reported_impact: Medium impact
+current_status: New
+created_at: 2026-06-25 16:31",Integration Issue,Medium,Webhook is not triggering after order confirmation.,"Check webhook configuration, logs, and external service availability, verify order confirmation process."
+71,"record_id: REC-1071
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Admin Panel
+support_channel: Web Form
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: Medium impact
+current_status: Open
+created_at: 2026-06-08 08:21",Data Issue,Medium,Reports are showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+72,"record_id: REC-1072
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Mobile App
+support_channel: Chat
+issue_text: Password reset link expires immediately after it is generated.
+reported_impact: High business impact
+current_status: New
+created_at: 2026-06-13 22:09",Authentication Issue,High,"Password reset link expires immediately after it is generated, severely impacting users.","Check system time synchronization and password reset token validity settings, consider manual reset for affected users."
+73,"record_id: REC-1073
+customer_name: Divya Menon
+customer_email: divya.menon@example.com
+product_area: Mobile App
+support_channel: Web Form
+issue_text: Uploaded documents are missing from the customer profile.
+reported_impact: Medium impact
+current_status: In Review
+created_at: 2026-06-18 14:26",Data Issue,Medium,Uploaded documents are missing from the customer profile.,"Check document storage, database records for file paths, and upload process logs."
+74,"record_id: REC-1074
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: API Integration
+support_channel: Web Form
+issue_text: Uploaded documents are missing from the customer profile.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-13 15:00",Data Issue,Medium,Uploaded documents are intermittently missing from the customer profile.,"Check document storage, database records for file paths, and upload process logs, monitor for recurrence."
+75,"record_id: REC-1075
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: API Integration
+support_channel: Web Form
+issue_text: Search results are not showing the expected records.
+reported_impact: Low impact
+current_status: New
+created_at: 2026-06-08 08:27",Application Bug,Low,Search results are not showing the expected records.,Check search index status and recent data updates.
+76,"record_id: REC-1076
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: API Integration
+support_channel: Phone
+issue_text: Customer cannot login after resetting password and sees invalid session token.
+reported_impact: High business impact
+current_status: In Review
+created_at: 2026-06-27 14:58",Authentication Issue,High,Customer cannot log in after resetting password and sees an invalid session token.,"Investigate session management and authentication token generation, clear user's existing sessions."
+77,"record_id: REC-1077
+customer_name: Amit Verma
+customer_email: amit.verma@example.com
+product_area: Web App
+support_channel: Web Form
+issue_text: Report generation freezes when selecting a large date range.
+reported_impact: User blocked
+current_status: Open
+created_at: 2026-06-21 13:08",Performance Issue,High,Report generation freezes when selecting a large date range.,Check resource utilization during report generation and optimize query/data processing.
+78,"record_id: REC-1078
+customer_name: Pooja Shah
+customer_email: pooja.shah@example.com
+product_area: Analytics Dashboard
+support_channel: Email
+issue_text: User is unable to update account security settings.
+reported_impact: Low impact
+current_status: Pending
+created_at: 2026-06-11 06:29",Security Issue,Low,User is unable to update account security settings.,Verify user permissions related to security settings and check for system-wide security policies.
+79,"record_id: REC-1079
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: API Integration
+support_channel: Phone
+issue_text: Admin user cannot access the settings page despite having permissions.
+reported_impact: Medium impact
+current_status: In Review
+created_at: 2026-06-27 02:30",Permission Issue,Medium,Admin user cannot access the settings page despite having permissions.,Review admin user's specific permissions and check for recent configuration changes.
+80,"record_id: REC-1080
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Web App
+support_channel: Phone
+issue_text: Billing page shows the wrong subscription plan.
+reported_impact: User blocked
+current_status: New
+created_at: 2026-06-25 20:02",Billing Issue,High,"Billing page shows the wrong subscription plan, blocking user.",Verify customer's actual subscription plan and review billing system data.
+81,"record_id: REC-1081
+customer_name: Sanjay Joshi
+customer_email: sanjay.joshi@example.com
+product_area: Payment Portal
+support_channel: Chat
+issue_text: Customer cannot login after resetting password and sees invalid session token.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-05 07:08",Authentication Issue,Medium,Customer intermittently cannot log in after resetting password due to an invalid session token.,"Investigate session management and authentication token generation, clear user's existing sessions."
+82,"record_id: REC-1082
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Mobile App
+support_channel: Slack
+issue_text: User role changed but permissions did not update correctly.
+reported_impact: Low impact
+current_status: New
+created_at: 2026-06-23 08:49",Permission Issue,Low,User permissions not updating correctly after role change.,Verify user's new role and assigned permissions in the admin panel.
+83,"record_id: REC-1083
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Mobile App
+support_channel: Chat
+issue_text: Email notifications are not being delivered for new alerts.
+reported_impact: User blocked
+current_status: Pending
+created_at: 2026-06-19 00:59",Notification Issue,High,"Email notifications are not being delivered for new alerts, blocking user.",Check notification service logs and email delivery status.
+84,"record_id: REC-1084
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: API Integration
+support_channel: Web Form
+issue_text: Push notifications stopped working after the latest app update.
+reported_impact: User blocked
+current_status: New
+created_at: 2026-06-19 22:53",Notification Issue,High,"Push notifications stopped working after the latest app update, blocking user.","Check notification service status, app version, and user device settings."
+85,"record_id: REC-1085
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Mobile App
+support_channel: Mobile App
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: Intermittent issue
+current_status: Pending
+created_at: 2026-06-26 03:50",Data Issue,Medium,Reports are intermittently showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+86,"record_id: REC-1086
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Reporting Tool
+support_channel: Slack
+issue_text: Two-factor authentication code is not arriving on the registered mobile number.
+reported_impact: Medium impact
+current_status: In Review
+created_at: 2026-06-03 16:41",Authentication Issue,Medium,Two-factor authentication code is not arriving on the registered mobile number.,Verify registered mobile number and check notification service logs.
+87,"record_id: REC-1087
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: API Integration
+support_channel: Web Form
+issue_text: Customer cannot login after resetting password and sees invalid session token.
+reported_impact: Low impact
+current_status: Open
+created_at: 2026-06-12 20:57",Authentication Issue,Low,Customer cannot log in after resetting password and sees an invalid session token.,"Investigate session management and authentication token generation, clear user's existing sessions."
+88,"record_id: REC-1088
+customer_name: Pooja Shah
+customer_email: pooja.shah@example.com
+product_area: Analytics Dashboard
+support_channel: Web Form
+issue_text: User is unable to update account security settings.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-21 08:39",Security Issue,Medium,User is intermittently unable to update account security settings.,Verify user permissions related to security settings and check for system-wide security policies.
+89,"record_id: REC-1089
+customer_name: Sanjay Joshi
+customer_email: sanjay.joshi@example.com
+product_area: Notification Service
+support_channel: Web Form
+issue_text: Password reset link expires immediately after it is generated.
+reported_impact: Intermittent issue
+current_status: In Review
+created_at: 2026-06-09 10:54",Authentication Issue,Medium,Password reset link expires immediately after it is generated intermittently.,Check system time synchronization and password reset token validity settings.
+90,"record_id: REC-1090
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Admin Panel
+support_channel: Web Form
+issue_text: Dashboard is loading very slowly and sometimes times out.
+reported_impact: Low impact
+current_status: New
+created_at: 2026-06-19 19:42",Performance Issue,Low,Dashboard is loading very slowly and sometimes times out.,"Monitor server performance, database queries, and network latency."
+91,"record_id: REC-1091
+customer_name: Arjun Patel
+customer_email: arjun.patel@example.com
+product_area: Web App
+support_channel: Web Form
+issue_text: Admin user cannot access the settings page despite having permissions.
+reported_impact: High business impact
+current_status: Pending
+created_at: 2026-06-16 06:22",Permission Issue,High,Admin user cannot access the settings page despite having permissions.,Review admin user's specific permissions and check for recent configuration changes.
+92,"record_id: REC-1092
+customer_name: Sanjay Joshi
+customer_email: sanjay.joshi@example.com
+product_area: Reporting Tool
+support_channel: Phone
+issue_text: User cannot export the report as a PDF file.
+reported_impact: Intermittent issue
+current_status: Pending
+created_at: 2026-06-01 16:12",Application Bug,Medium,User intermittently cannot export reports as a PDF file.,Check browser console for errors and verify report generation service status.
+93,"record_id: REC-1093
+customer_name: Priya Reddy
+customer_email: priya.reddy@example.com
+product_area: API Integration
+support_channel: Web Form
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: Low impact
+current_status: New
+created_at: 2026-06-21 22:31",Data Issue,Low,Reports are showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."
+94,"record_id: REC-1094
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Mobile App
+support_channel: Phone
+issue_text: Customer cannot login after resetting password and sees invalid session token.
+reported_impact: Low impact
+current_status: New
+created_at: 2026-06-23 07:19",Authentication Issue,Low,Customer cannot log in after resetting password and sees an invalid session token.,"Investigate session management and authentication token generation, clear user's existing sessions."
+95,"record_id: REC-1095
+customer_name: Rohit Kumar
+customer_email: rohit.kumar@example.com
+product_area: Reporting Tool
+support_channel: Web Form
+issue_text: Push notifications stopped working after the latest app update.
+reported_impact: Low impact
+current_status: Pending
+created_at: 2026-06-24 17:21",Notification Issue,Low,Push notifications stopped working after the latest app update.,"Check notification service status, app version, and user device settings."
+96,"record_id: REC-1096
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Notification Service
+support_channel: Phone
+issue_text: Invoice download button is not responding.
+reported_impact: Medium impact
+current_status: Pending
+created_at: 2026-06-08 03:46",Application Bug,Medium,Invoice download button is not responding.,Check browser console for errors and verify backend service for invoice generation.
+97,"record_id: REC-1097
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Mobile App
+support_channel: Mobile App
+issue_text: Admin user cannot access the settings page despite having permissions.
+reported_impact: High business impact
+current_status: New
+created_at: 2026-06-07 23:30",Permission Issue,High,Admin user cannot access the settings page despite having permissions.,Review admin user's specific permissions and check for recent configuration changes.
+98,"record_id: REC-1098
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Admin Panel
+support_channel: Email
+issue_text: Billing page shows the wrong subscription plan.
+reported_impact: Medium impact
+current_status: New
+created_at: 2026-06-08 11:11",Billing Issue,Medium,Billing page shows the wrong subscription plan.,Verify customer's actual subscription plan and review billing system data.
+99,"record_id: REC-1099
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Analytics Dashboard
+support_channel: Phone
+issue_text: Customer cannot login after resetting password and sees invalid session token.
+reported_impact: User blocked
+current_status: Open
+created_at: 2026-06-18 09:44",Authentication Issue,High,Customer cannot log in after resetting password and sees an invalid session token.,"Investigate session management and authentication token generation, clear user's existing sessions."
+100,"record_id: REC-1100
+customer_name: Amit Verma
+customer_email: amit.verma@example.com
+product_area: Notification Service
+support_channel: Email
+issue_text: Approval request is stuck and manager cannot approve it.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-10 15:30",Application Bug,Medium,Approval request is intermittently stuck and manager cannot approve it.,Investigate the approval workflow status and associated logs.
+101,"record_id: REC-1101
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Analytics Dashboard
+support_channel: Email
+issue_text: Admin user cannot access the settings page despite having permissions.
+reported_impact: Low impact
+current_status: Pending
+created_at: 2026-06-04 02:25",Permission Issue,Low,Admin user cannot access the settings page despite having permissions.,Review admin user's specific permissions and check for recent configuration changes.
+102,"record_id: REC-1102
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Web App
+support_channel: Chat
+issue_text: Dashboard is loading very slowly and sometimes times out.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-10 02:15",Performance Issue,Medium,Dashboard is intermittently loading very slowly and sometimes times out.,"Monitor server performance, database queries, and network latency."
+103,"record_id: REC-1103
+customer_name: Priya Reddy
+customer_email: priya.reddy@example.com
+product_area: API Integration
+support_channel: Slack
+issue_text: Password reset link expires immediately after it is generated.
+reported_impact: Intermittent issue
+current_status: New
+created_at: 2026-06-13 14:58",Authentication Issue,Medium,Password reset link expires immediately after it is generated intermittently.,Check system time synchronization and password reset token validity settings.
+104,"record_id: REC-1104
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: API Integration
+support_channel: Phone
+issue_text: Search results are not showing the expected records.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-24 03:48",Application Bug,Medium,Search results are intermittently not showing the expected records.,"Check search index status and recent data updates, monitor for recurrence."
+105,"record_id: REC-1105
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Payment Portal
+support_channel: Phone
+issue_text: Approval request is stuck and manager cannot approve it.
+reported_impact: High business impact
+current_status: Open
+created_at: 2026-06-08 05:35",Application Bug,High,Approval request is stuck and manager cannot approve it.,Investigate the approval workflow status and associated logs.
+106,"record_id: REC-1106
+customer_name: Priya Reddy
+customer_email: priya.reddy@example.com
+product_area: Web App
+support_channel: Web Form
+issue_text: Email notifications are not being delivered for new alerts.
+reported_impact: Intermittent issue
+current_status: In Review
+created_at: 2026-06-16 09:02",Notification Issue,Medium,Email notifications are intermittently not being delivered for new alerts.,Check notification service logs and email delivery status.
+107,"record_id: REC-1107
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Admin Panel
+support_channel: Mobile App
+issue_text: Search results are not showing the expected records.
+reported_impact: User blocked
+current_status: In Review
+created_at: 2026-06-22 07:59",Application Bug,High,"Search results are not showing the expected records, blocking user.",Check search index status and recent data updates.
+108,"record_id: REC-1108
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Payment Portal
+support_channel: Web Form
+issue_text: Approval request is stuck and manager cannot approve it.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-08 20:09",Application Bug,Medium,Approval request is intermittently stuck and manager cannot approve it.,Investigate the approval workflow status and associated logs.
+109,"record_id: REC-1109
+customer_name: Nikhil Jain
+customer_email: nikhil.jain@example.com
+product_area: Analytics Dashboard
+support_channel: Email
+issue_text: User cannot export the report as a PDF file.
+reported_impact: High business impact
+current_status: Open
+created_at: 2026-06-26 09:38",Application Bug,High,User cannot export reports as a PDF file.,Check browser console for errors and verify report generation service status.
+110,"record_id: REC-1110
+customer_name: Divya Menon
+customer_email: divya.menon@example.com
+product_area: Admin Panel
+support_channel: Web Form
+issue_text: Push notifications stopped working after the latest app update.
+reported_impact: Low impact
+current_status: Open
+created_at: 2026-06-23 09:44",Notification Issue,Low,Push notifications stopped working after the latest app update.,"Check notification service status, app version, and user device settings."
+111,"record_id: REC-1111
+customer_name: Arjun Patel
+customer_email: arjun.patel@example.com
+product_area: Notification Service
+support_channel: Web Form
+issue_text: User cannot export the report as a PDF file.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-02 13:47",Application Bug,Medium,User intermittently cannot export reports as a PDF file.,Check browser console for errors and verify report generation service status.
+112,"record_id: REC-1112
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: Admin Panel
+support_channel: Email
+issue_text: Report generation freezes when selecting a large date range.
+reported_impact: High business impact
+current_status: Open
+created_at: 2026-06-22 18:37",Performance Issue,High,Report generation freezes when selecting a large date range.,Check resource utilization during report generation and optimize query/data processing.
+113,"record_id: REC-1113
+customer_name: Rahul Sharma
+customer_email: rahul.sharma@example.com
+product_area: Admin Panel
+support_channel: Slack
+issue_text: Data sync between systems is delayed by more than one hour.
+reported_impact: High business impact
+current_status: Open
+created_at: 2026-06-16 16:41",Performance Issue,High,Data synchronization between systems is delayed by more than one hour.,Check data sync service status and logs for bottlenecks or errors.
+114,"record_id: REC-1114
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: Analytics Dashboard
+support_channel: Slack
+issue_text: User cannot export the report as a PDF file.
+reported_impact: Low impact
+current_status: In Review
+created_at: 2026-06-03 15:22",Application Bug,Low,User cannot export reports as a PDF file.,Check browser console for errors and verify report generation service status.
+115,"record_id: REC-1115
+customer_name: Arjun Patel
+customer_email: arjun.patel@example.com
+product_area: Reporting Tool
+support_channel: Mobile App
+issue_text: Admin user cannot access the settings page despite having permissions.
+reported_impact: High business impact
+current_status: Open
+created_at: 2026-06-11 13:44",Permission Issue,High,Admin user cannot access the settings page despite having permissions.,Review admin user's specific permissions and check for recent configuration changes.
+116,"record_id: REC-1116
+customer_name: Neha Gupta
+customer_email: neha.gupta@example.com
+product_area: API Integration
+support_channel: Slack
+issue_text: Search results are not showing the expected records.
+reported_impact: Low impact
+current_status: Open
+created_at: 2026-06-03 10:16",Application Bug,Low,Search results are not showing the expected records.,Check search index status and recent data updates.
+117,"record_id: REC-1117
+customer_name: Meera Nair
+customer_email: meera.nair@example.com
+product_area: API Integration
+support_channel: Slack
+issue_text: Application crashes when opening the analytics page.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-15 13:03",Application Bug,Medium,Application intermittently crashes when opening the analytics page.,Investigate application logs for crash details and patterns.
+118,"record_id: REC-1118
+customer_name: Sneha Iyer
+customer_email: sneha.iyer@example.com
+product_area: Reporting Tool
+support_channel: Slack
+issue_text: Customer records are duplicated after importing a CSV file.
+reported_impact: Low impact
+current_status: In Review
+created_at: 2026-06-25 01:13",Data Issue,Low,Customer records are duplicated after importing a CSV file.,Examine CSV import logs and data processing routines for duplication causes.
+119,"record_id: REC-1119
+customer_name: Kiran Rao
+customer_email: kiran.rao@example.com
+product_area: Analytics Dashboard
+support_channel: Phone
+issue_text: Password reset link expires immediately after it is generated.
+reported_impact: Low impact
+current_status: In Review
+created_at: 2026-06-04 00:40",Authentication Issue,Low,Password reset link expires immediately after it is generated.,Check system time synchronization and password reset token validity settings.
+120,"record_id: REC-1120
+customer_name: Ananya Das
+customer_email: ananya.das@example.com
+product_area: Analytics Dashboard
+support_channel: Phone
+issue_text: Reports are showing incorrect totals compared to yesterday.
+reported_impact: Intermittent issue
+current_status: Open
+created_at: 2026-06-14 02:14",Data Issue,Medium,Reports are intermittently showing incorrect totals compared to yesterday.,"Verify data sources, aggregation logic, and recent data updates for discrepancies."

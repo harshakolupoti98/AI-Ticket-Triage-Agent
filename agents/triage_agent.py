@@ -1,5 +1,6 @@
 import os
 import json
+import time
 import pandas as pd
 from dotenv import load_dotenv
 from google import genai
@@ -10,32 +11,137 @@ from google import genai
 
 load_dotenv()
 
+
+# --------------------------------------------------
+# Settings
+# --------------------------------------------------
+
+BATCH_SIZE = 200
+REQUEST_DELAY_SECONDS = 15
+
+
+# --------------------------------------------------
+# Get Gemini API Key
+# --------------------------------------------------
+
+def get_gemini_api_key():
+
+    api_key = os.getenv("GEMINI_API_KEY")
+
+    if api_key:
+        return api_key
+
+    try:
+        import streamlit as st
+
+        if "GEMINI_API_KEY" in st.secrets:
+            return st.secrets["GEMINI_API_KEY"]
+
+    except Exception:
+        pass
+
+    raise Exception(
+        "GEMINI_API_KEY not found. Add it in .env locally or Streamlit Secrets after deployment."
+    )
+
+
 client = genai.Client(
-    api_key=os.getenv("GEMINI_API_KEY")
+    api_key=get_gemini_api_key()
 )
+
+
+# --------------------------------------------------
+# Convert Any CSV Row Into Ticket Text
+# --------------------------------------------------
+
+def row_to_ticket_text(row):
+
+    parts = []
+
+    for column_name, value in row.items():
+
+        if pd.isna(value):
+            continue
+
+        value = str(value).strip()
+
+        if value == "":
+            continue
+
+        parts.append(f"{column_name}: {value}")
+
+    return "\n".join(parts)
+
+
+def convert_csv_to_tickets(df):
+
+    df = df.dropna(how="all")
+
+    tickets = []
+
+    for _, row in df.iterrows():
+
+        ticket_text = row_to_ticket_text(row)
+
+        if ticket_text.strip() != "":
+            tickets.append(ticket_text)
+
+    if len(tickets) == 0:
+        raise Exception("The uploaded CSV does not contain any usable data.")
+
+    return tickets
+
+
+# --------------------------------------------------
+# Clean Gemini JSON Response
+# --------------------------------------------------
+
+def clean_json_response(response_text):
+
+    cleaned = response_text.strip()
+
+    if cleaned.startswith("```"):
+        cleaned = cleaned.replace("```json", "")
+        cleaned = cleaned.replace("```", "")
+        cleaned = cleaned.strip()
+
+    start = cleaned.find("{")
+    end = cleaned.rfind("}")
+
+    if start != -1 and end != -1:
+        cleaned = cleaned[start:end + 1]
+
+    return cleaned
+
 
 # --------------------------------------------------
 # Gemini Batch Processing
 # --------------------------------------------------
 
-def process_batch(tickets, ticket_count):
+def process_batch(batch_text, batch_count, batch_number, total_batches):
 
     prompt = f"""
 You are an AI customer support ticket triage agent.
 
-Analyze ALL tickets below separately.
+Analyze ALL records below separately.
 
-Tickets:
+Each record may come from any CSV format.
+Column names may be different.
+Use the available row information to understand the customer issue.
 
-{tickets}
+Records:
+
+{batch_text}
 
 IMPORTANT RULES:
 
-- You must return exactly {ticket_count} ticket results.
-- ticket_id must go from 1 to {ticket_count}.
-- Do not stop after one ticket.
-- Do not combine tickets.
-- Create one result object for every ticket.
+- You must return exactly {batch_count} results.
+- Do not stop early.
+- Do not combine records.
+- Create one result object for every record.
+- Use the Record ID shown for each record as the ticket_id.
+- If a record has extra fields like customer name, email, date, status, product, source, or ID, use them only as context.
+- Your output must focus on the customer support issue.
 
 Return ONLY valid JSON.
 
@@ -53,8 +159,6 @@ Use this exact structure:
   ]
 }}
 
-Continue the same JSON structure until all {ticket_count} tickets have been returned.
-
 Categories MUST be ONLY one of:
 
 Authentication Issue
@@ -67,6 +171,8 @@ Integration Issue
 UI Issue
 Permission Issue
 Security Issue
+Billing Issue
+General Support Issue
 
 Priority MUST be ONLY:
 
@@ -79,23 +185,15 @@ No explanation.
 Return JSON only.
 """
 
+    print(f"\nProcessing batch {batch_number} of {total_batches}...")
+    print(f"Records in this batch: {batch_count}")
+
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents=prompt
     )
 
-    print("\n========================================")
-    print("RAW GEMINI RESPONSE")
-    print("========================================\n")
-    print(response.text)
-    print("\n========================================\n")
-
-    cleaned = response.text.strip()
-
-    if cleaned.startswith("```"):
-        cleaned = cleaned.replace("```json", "")
-        cleaned = cleaned.replace("```", "")
-        cleaned = cleaned.strip()
+    cleaned = clean_json_response(response.text)
 
     data = json.loads(cleaned)
 
@@ -113,35 +211,74 @@ def run_triage(
 
     df = pd.read_csv(input_file)
 
-    ticket_column = None
+    ticket_list = convert_csv_to_tickets(df)
 
-    for col in df.columns:
-        if col.lower().strip() == "ticket":
-            ticket_column = col
-            break
+    total_tickets = len(ticket_list)
 
-    if ticket_column is None:
-        raise Exception("No 'ticket' column found in CSV.")
+    print(f"Total records found: {total_tickets}")
+    print(f"Batch size: {BATCH_SIZE}")
 
-    df = df.dropna(subset=[ticket_column])
+    all_results = []
 
-    ticket_count = len(df)
+    total_batches = (total_tickets + BATCH_SIZE - 1) // BATCH_SIZE
 
-    ticket_text = ""
+    for batch_index in range(total_batches):
 
-    for count, ticket in enumerate(df[ticket_column], start=1):
+        start_index = batch_index * BATCH_SIZE
+        end_index = min(start_index + BATCH_SIZE, total_tickets)
 
-        ticket_text += f"""
-Ticket ID: {count}
-Ticket: {ticket}
+        batch_tickets = ticket_list[start_index:end_index]
+
+        batch_text = ""
+
+        for global_index, ticket in enumerate(batch_tickets, start=start_index + 1):
+
+            batch_text += f"""
+Record ID: {global_index}
+Record Details:
+{ticket}
 
 """
 
-    print(f"Sending {ticket_count} tickets to Gemini...")
+        batch_results = process_batch(
+            batch_text=batch_text,
+            batch_count=len(batch_tickets),
+            batch_number=batch_index + 1,
+            total_batches=total_batches
+        )
 
-    results = process_batch(ticket_text, ticket_count)
+        for result_index, result in enumerate(batch_results):
 
-    output = pd.DataFrame(results)
+            global_ticket_id = start_index + result_index + 1
+            result["ticket_id"] = global_ticket_id
+
+            all_results.append(result)
+
+        print(f"Batch {batch_index + 1} complete.")
+        print(f"Total processed so far: {len(all_results)}")
+
+        if batch_index < total_batches - 1:
+            print(f"Waiting {REQUEST_DELAY_SECONDS} seconds before next batch...")
+            time.sleep(REQUEST_DELAY_SECONDS)
+
+    output = pd.DataFrame(all_results)
+
+    rows = min(len(output), len(ticket_list))
+
+    output = output.iloc[:rows].copy()
+
+    output["Ticket"] = ticket_list[:rows]
+
+    output = output[
+        [
+            "ticket_id",
+            "Ticket",
+            "category",
+            "priority",
+            "summary",
+            "suggested_action"
+        ]
+    ]
 
     output.to_csv(
         output_file,
@@ -149,7 +286,7 @@ Ticket: {ticket}
     )
 
     print("\nDONE - Gemini batch processing complete")
-    print(f"Processed {len(output)} tickets.")
+    print(f"Processed {len(output)} records.")
     print(f"Saved to: {output_file}")
 
     return output
