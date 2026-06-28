@@ -13,6 +13,8 @@ st.set_page_config(
 
 st.title("🎫 AI Ticket Triage Dashboard")
 
+st.caption("Developed by Sai Sri Harsha Kolupoti | AI-Powered Support Ticket Triage System")
+
 st.markdown(
     "Upload support ticket data to automatically classify issues, assign priority, generate summaries, and recommend next actions."
 )
