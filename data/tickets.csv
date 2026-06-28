@@ -1,121 +1,201 @@
 record_id,customer_name,customer_email,product_area,support_channel,issue_text,reported_impact,current_status,created_at
-REC-1001,Rohit Kumar,rohit.kumar@example.com,Web App,Mobile App,Application crashes when opening the analytics page.,High business impact,Pending,2026-06-08 04:47
-REC-1002,Priya Reddy,priya.reddy@example.com,Mobile App,Slack,User role changed but permissions did not update correctly.,User blocked,In Review,2026-06-01 02:13
-REC-1003,Sneha Iyer,sneha.iyer@example.com,Web App,Slack,Customer records are duplicated after importing a CSV file.,Intermittent issue,New,2026-06-14 07:28
-REC-1004,Ananya Das,ananya.das@example.com,Web App,Chat,User cannot export the report as a PDF file.,Medium impact,In Review,2026-06-09 04:13
-REC-1005,Sanjay Joshi,sanjay.joshi@example.com,Mobile App,Email,Admin user cannot access the settings page despite having permissions.,User blocked,In Review,2026-06-12 11:38
-REC-1006,Kiran Rao,kiran.rao@example.com,Notification Service,Slack,Two-factor authentication code is not arriving on the registered mobile number.,Low impact,Open,2026-06-03 17:18
-REC-1007,Pooja Shah,pooja.shah@example.com,Reporting Tool,Slack,Approval request is stuck and manager cannot approve it.,User blocked,New,2026-06-02 21:14
-REC-1008,Sanjay Joshi,sanjay.joshi@example.com,Mobile App,Chat,Search results are not showing the expected records.,Low impact,Open,2026-06-09 14:40
-REC-1009,Pooja Shah,pooja.shah@example.com,Analytics Dashboard,Phone,API integration with third-party CRM is returning a 500 error.,High business impact,Pending,2026-06-22 08:44
-REC-1010,Nikhil Jain,nikhil.jain@example.com,Mobile App,Slack,User role changed but permissions did not update correctly.,Intermittent issue,New,2026-06-24 07:10
-REC-1011,Neha Gupta,neha.gupta@example.com,Admin Panel,Mobile App,Mobile layout is broken and buttons overlap on smaller screens.,Medium impact,New,2026-06-27 01:14
-REC-1012,Pooja Shah,pooja.shah@example.com,Reporting Tool,Web Form,Two-factor authentication code is not arriving on the registered mobile number.,User blocked,Pending,2026-06-07 18:56
-REC-1013,Divya Menon,divya.menon@example.com,Payment Portal,Mobile App,Admin user cannot access the settings page despite having permissions.,Low impact,In Review,2026-06-21 14:09
-REC-1014,Kiran Rao,kiran.rao@example.com,Payment Portal,Mobile App,Payment failed but amount was deducted from the customer account.,Intermittent issue,Pending,2026-06-14 18:25
-REC-1015,Meera Nair,meera.nair@example.com,Analytics Dashboard,Slack,Reports are showing incorrect totals compared to yesterday.,User blocked,In Review,2026-06-25 01:55
-REC-1016,Priya Reddy,priya.reddy@example.com,Analytics Dashboard,Mobile App,Payment failed but amount was deducted from the customer account.,Intermittent issue,In Review,2026-06-03 12:24
-REC-1017,Ananya Das,ananya.das@example.com,Admin Panel,Slack,User is unable to update account security settings.,User blocked,Open,2026-06-22 17:48
-REC-1018,Kiran Rao,kiran.rao@example.com,Reporting Tool,Email,Data sync between systems is delayed by more than one hour.,Low impact,Pending,2026-06-06 14:00
-REC-1019,Divya Menon,divya.menon@example.com,Admin Panel,Slack,Billing page shows the wrong subscription plan.,Intermittent issue,New,2026-06-04 20:19
-REC-1020,Pooja Shah,pooja.shah@example.com,Payment Portal,Chat,Approval request is stuck and manager cannot approve it.,High business impact,Pending,2026-06-18 16:58
-REC-1021,Rahul Sharma,rahul.sharma@example.com,Reporting Tool,Web Form,Report generation freezes when selecting a large date range.,User blocked,Open,2026-06-12 09:15
-REC-1022,Rahul Sharma,rahul.sharma@example.com,Mobile App,Email,Reports are showing incorrect totals compared to yesterday.,User blocked,In Review,2026-06-25 17:49
-REC-1023,Amit Verma,amit.verma@example.com,Notification Service,Slack,Payment failed but amount was deducted from the customer account.,Medium impact,New,2026-06-17 19:27
-REC-1024,Sneha Iyer,sneha.iyer@example.com,Payment Portal,Mobile App,Password reset link expires immediately after it is generated.,Low impact,Pending,2026-06-22 20:23
-REC-1025,Neha Gupta,neha.gupta@example.com,Notification Service,Email,Customer records are duplicated after importing a CSV file.,High business impact,New,2026-06-03 10:01
-REC-1026,Ananya Das,ananya.das@example.com,Payment Portal,Slack,Password reset link expires immediately after it is generated.,User blocked,New,2026-06-03 22:40
-REC-1027,Rahul Sharma,rahul.sharma@example.com,Mobile App,Email,Reports are showing incorrect totals compared to yesterday.,User blocked,Pending,2026-06-17 07:17
-REC-1028,Rohit Kumar,rohit.kumar@example.com,Payment Portal,Slack,Webhook is not triggering after order confirmation.,Intermittent issue,New,2026-06-19 15:15
-REC-1029,Sanjay Joshi,sanjay.joshi@example.com,API Integration,Chat,Webhook is not triggering after order confirmation.,User blocked,Open,2026-06-22 13:22
-REC-1030,Arjun Patel,arjun.patel@example.com,Notification Service,Mobile App,Suspicious login alert was triggered from an unknown device.,User blocked,Open,2026-06-02 12:46
-REC-1031,Meera Nair,meera.nair@example.com,Payment Portal,Chat,Application crashes when opening the analytics page.,Intermittent issue,New,2026-06-15 04:27
-REC-1032,Amit Verma,amit.verma@example.com,Notification Service,Chat,User cannot export the report as a PDF file.,Low impact,Open,2026-06-26 17:06
-REC-1033,Rahul Sharma,rahul.sharma@example.com,Web App,Email,Approval request is stuck and manager cannot approve it.,High business impact,New,2026-06-14 15:30
-REC-1034,Sneha Iyer,sneha.iyer@example.com,Web App,Chat,Mobile layout is broken and buttons overlap on smaller screens.,User blocked,In Review,2026-06-13 08:59
-REC-1035,Sanjay Joshi,sanjay.joshi@example.com,Admin Panel,Web Form,User is unable to update account security settings.,High business impact,In Review,2026-06-07 09:13
-REC-1036,Rahul Sharma,rahul.sharma@example.com,Web App,Mobile App,Push notifications stopped working after the latest app update.,User blocked,Pending,2026-06-02 18:30
-REC-1037,Vikram Singh,vikram.singh@example.com,Analytics Dashboard,Email,Customer records are duplicated after importing a CSV file.,High business impact,Open,2026-06-03 19:04
-REC-1038,Rohit Kumar,rohit.kumar@example.com,API Integration,Email,Reports are showing incorrect totals compared to yesterday.,Intermittent issue,New,2026-06-20 01:39
-REC-1039,Priya Reddy,priya.reddy@example.com,Reporting Tool,Phone,Suspicious login alert was triggered from an unknown device.,Medium impact,New,2026-06-08 08:25
-REC-1040,Amit Verma,amit.verma@example.com,Admin Panel,Web Form,User role changed but permissions did not update correctly.,User blocked,Pending,2026-06-01 14:39
-REC-1041,Ananya Das,ananya.das@example.com,Mobile App,Slack,Application crashes when opening the analytics page.,Intermittent issue,New,2026-06-09 04:59
-REC-1042,Meera Nair,meera.nair@example.com,Payment Portal,Phone,Dashboard is loading very slowly and sometimes times out.,High business impact,Pending,2026-06-15 17:45
-REC-1043,Kiran Rao,kiran.rao@example.com,Web App,Mobile App,Report generation freezes when selecting a large date range.,User blocked,Pending,2026-06-05 08:07
-REC-1044,Nikhil Jain,nikhil.jain@example.com,Analytics Dashboard,Phone,Application crashes when opening the analytics page.,Intermittent issue,Pending,2026-06-07 22:21
-REC-1045,Sneha Iyer,sneha.iyer@example.com,Admin Panel,Slack,User role changed but permissions did not update correctly.,Medium impact,In Review,2026-06-28 01:05
-REC-1046,Rohit Kumar,rohit.kumar@example.com,Admin Panel,Email,Suspicious login alert was triggered from an unknown device.,Medium impact,Open,2026-06-25 04:40
-REC-1047,Kiran Rao,kiran.rao@example.com,Notification Service,Slack,Email notifications are not being delivered for new alerts.,Intermittent issue,In Review,2026-06-01 03:04
-REC-1048,Nikhil Jain,nikhil.jain@example.com,Analytics Dashboard,Slack,Invoice download button is not responding.,Medium impact,Open,2026-06-19 17:09
-REC-1049,Arjun Patel,arjun.patel@example.com,Web App,Phone,Payment failed but amount was deducted from the customer account.,User blocked,Pending,2026-06-12 06:43
-REC-1050,Sneha Iyer,sneha.iyer@example.com,Mobile App,Phone,User role changed but permissions did not update correctly.,Intermittent issue,In Review,2026-06-24 04:59
-REC-1051,Nikhil Jain,nikhil.jain@example.com,Analytics Dashboard,Chat,Reports are showing incorrect totals compared to yesterday.,User blocked,In Review,2026-06-06 23:59
-REC-1052,Meera Nair,meera.nair@example.com,Payment Portal,Phone,Suspicious login alert was triggered from an unknown device.,User blocked,New,2026-06-13 01:54
-REC-1053,Neha Gupta,neha.gupta@example.com,Payment Portal,Web Form,Reports are showing incorrect totals compared to yesterday.,Medium impact,Pending,2026-06-27 07:14
-REC-1054,Rahul Sharma,rahul.sharma@example.com,Payment Portal,Web Form,User role changed but permissions did not update correctly.,Medium impact,Pending,2026-06-28 02:49
-REC-1055,Kiran Rao,kiran.rao@example.com,API Integration,Mobile App,API integration with third-party CRM is returning a 500 error.,User blocked,Pending,2026-06-04 08:11
-REC-1056,Ananya Das,ananya.das@example.com,Web App,Email,User cannot export the report as a PDF file.,Medium impact,In Review,2026-06-24 10:27
-REC-1057,Ananya Das,ananya.das@example.com,Mobile App,Web Form,Customer records are duplicated after importing a CSV file.,Medium impact,New,2026-06-02 22:27
-REC-1058,Rahul Sharma,rahul.sharma@example.com,Payment Portal,Phone,Customer records are duplicated after importing a CSV file.,User blocked,In Review,2026-06-22 10:39
-REC-1059,Meera Nair,meera.nair@example.com,Mobile App,Mobile App,User role changed but permissions did not update correctly.,Intermittent issue,Pending,2026-06-10 21:26
-REC-1060,Meera Nair,meera.nair@example.com,Admin Panel,Slack,Mobile layout is broken and buttons overlap on smaller screens.,High business impact,New,2026-06-14 21:24
-REC-1061,Rohit Kumar,rohit.kumar@example.com,Analytics Dashboard,Slack,Billing page shows the wrong subscription plan.,Low impact,Pending,2026-06-18 00:19
-REC-1062,Kiran Rao,kiran.rao@example.com,API Integration,Slack,Uploaded documents are missing from the customer profile.,Low impact,Pending,2026-06-15 14:43
-REC-1063,Sneha Iyer,sneha.iyer@example.com,Notification Service,Mobile App,Customer records are duplicated after importing a CSV file.,User blocked,New,2026-06-10 16:42
-REC-1064,Rohit Kumar,rohit.kumar@example.com,Reporting Tool,Email,Report generation freezes when selecting a large date range.,Medium impact,New,2026-06-08 06:09
-REC-1065,Rahul Sharma,rahul.sharma@example.com,Payment Portal,Web Form,Two-factor authentication code is not arriving on the registered mobile number.,Low impact,Open,2026-06-14 20:36
-REC-1066,Sneha Iyer,sneha.iyer@example.com,API Integration,Web Form,Invoice download button is not responding.,High business impact,In Review,2026-06-05 20:44
-REC-1067,Rahul Sharma,rahul.sharma@example.com,Mobile App,Web Form,Data sync between systems is delayed by more than one hour.,High business impact,New,2026-06-26 22:33
-REC-1068,Neha Gupta,neha.gupta@example.com,Payment Portal,Email,Two-factor authentication code is not arriving on the registered mobile number.,High business impact,In Review,2026-06-26 14:42
-REC-1069,Vikram Singh,vikram.singh@example.com,Reporting Tool,Web Form,Password reset link expires immediately after it is generated.,Intermittent issue,In Review,2026-06-15 05:47
-REC-1070,Pooja Shah,pooja.shah@example.com,Notification Service,Phone,Webhook is not triggering after order confirmation.,Medium impact,New,2026-06-25 16:31
-REC-1071,Rohit Kumar,rohit.kumar@example.com,Admin Panel,Web Form,Reports are showing incorrect totals compared to yesterday.,Medium impact,Open,2026-06-08 08:21
-REC-1072,Meera Nair,meera.nair@example.com,Mobile App,Chat,Password reset link expires immediately after it is generated.,High business impact,New,2026-06-13 22:09
-REC-1073,Divya Menon,divya.menon@example.com,Mobile App,Web Form,Uploaded documents are missing from the customer profile.,Medium impact,In Review,2026-06-18 14:26
-REC-1074,Rahul Sharma,rahul.sharma@example.com,API Integration,Web Form,Uploaded documents are missing from the customer profile.,Intermittent issue,Open,2026-06-13 15:00
-REC-1075,Meera Nair,meera.nair@example.com,API Integration,Web Form,Search results are not showing the expected records.,Low impact,New,2026-06-08 08:27
-REC-1076,Neha Gupta,neha.gupta@example.com,API Integration,Phone,Customer cannot login after resetting password and sees invalid session token.,High business impact,In Review,2026-06-27 14:58
-REC-1077,Amit Verma,amit.verma@example.com,Web App,Web Form,Report generation freezes when selecting a large date range.,User blocked,Open,2026-06-21 13:08
-REC-1078,Pooja Shah,pooja.shah@example.com,Analytics Dashboard,Email,User is unable to update account security settings.,Low impact,Pending,2026-06-11 06:29
-REC-1079,Meera Nair,meera.nair@example.com,API Integration,Phone,Admin user cannot access the settings page despite having permissions.,Medium impact,In Review,2026-06-27 02:30
-REC-1080,Rahul Sharma,rahul.sharma@example.com,Web App,Phone,Billing page shows the wrong subscription plan.,User blocked,New,2026-06-25 20:02
-REC-1081,Sanjay Joshi,sanjay.joshi@example.com,Payment Portal,Chat,Customer cannot login after resetting password and sees invalid session token.,Intermittent issue,Open,2026-06-05 07:08
-REC-1082,Neha Gupta,neha.gupta@example.com,Mobile App,Slack,User role changed but permissions did not update correctly.,Low impact,New,2026-06-23 08:49
-REC-1083,Meera Nair,meera.nair@example.com,Mobile App,Chat,Email notifications are not being delivered for new alerts.,User blocked,Pending,2026-06-19 00:59
-REC-1084,Kiran Rao,kiran.rao@example.com,API Integration,Web Form,Push notifications stopped working after the latest app update.,User blocked,New,2026-06-19 22:53
-REC-1085,Rohit Kumar,rohit.kumar@example.com,Mobile App,Mobile App,Reports are showing incorrect totals compared to yesterday.,Intermittent issue,Pending,2026-06-26 03:50
-REC-1086,Ananya Das,ananya.das@example.com,Reporting Tool,Slack,Two-factor authentication code is not arriving on the registered mobile number.,Medium impact,In Review,2026-06-03 16:41
-REC-1087,Meera Nair,meera.nair@example.com,API Integration,Web Form,Customer cannot login after resetting password and sees invalid session token.,Low impact,Open,2026-06-12 20:57
-REC-1088,Pooja Shah,pooja.shah@example.com,Analytics Dashboard,Web Form,User is unable to update account security settings.,Intermittent issue,New,2026-06-21 08:39
-REC-1089,Sanjay Joshi,sanjay.joshi@example.com,Notification Service,Web Form,Password reset link expires immediately after it is generated.,Intermittent issue,In Review,2026-06-09 10:54
-REC-1090,Sneha Iyer,sneha.iyer@example.com,Admin Panel,Web Form,Dashboard is loading very slowly and sometimes times out.,Low impact,New,2026-06-19 19:42
-REC-1091,Arjun Patel,arjun.patel@example.com,Web App,Web Form,Admin user cannot access the settings page despite having permissions.,High business impact,Pending,2026-06-16 06:22
-REC-1092,Sanjay Joshi,sanjay.joshi@example.com,Reporting Tool,Phone,User cannot export the report as a PDF file.,Intermittent issue,Pending,2026-06-01 16:12
-REC-1093,Priya Reddy,priya.reddy@example.com,API Integration,Web Form,Reports are showing incorrect totals compared to yesterday.,Low impact,New,2026-06-21 22:31
-REC-1094,Neha Gupta,neha.gupta@example.com,Mobile App,Phone,Customer cannot login after resetting password and sees invalid session token.,Low impact,New,2026-06-23 07:19
-REC-1095,Rohit Kumar,rohit.kumar@example.com,Reporting Tool,Web Form,Push notifications stopped working after the latest app update.,Low impact,Pending,2026-06-24 17:21
-REC-1096,Meera Nair,meera.nair@example.com,Notification Service,Phone,Invoice download button is not responding.,Medium impact,Pending,2026-06-08 03:46
-REC-1097,Sneha Iyer,sneha.iyer@example.com,Mobile App,Mobile App,Admin user cannot access the settings page despite having permissions.,High business impact,New,2026-06-07 23:30
-REC-1098,Kiran Rao,kiran.rao@example.com,Admin Panel,Email,Billing page shows the wrong subscription plan.,Medium impact,New,2026-06-08 11:11
-REC-1099,Kiran Rao,kiran.rao@example.com,Analytics Dashboard,Phone,Customer cannot login after resetting password and sees invalid session token.,User blocked,Open,2026-06-18 09:44
-REC-1100,Amit Verma,amit.verma@example.com,Notification Service,Email,Approval request is stuck and manager cannot approve it.,Intermittent issue,Open,2026-06-10 15:30
-REC-1101,Neha Gupta,neha.gupta@example.com,Analytics Dashboard,Email,Admin user cannot access the settings page despite having permissions.,Low impact,Pending,2026-06-04 02:25
-REC-1102,Neha Gupta,neha.gupta@example.com,Web App,Chat,Dashboard is loading very slowly and sometimes times out.,Intermittent issue,New,2026-06-10 02:15
-REC-1103,Priya Reddy,priya.reddy@example.com,API Integration,Slack,Password reset link expires immediately after it is generated.,Intermittent issue,New,2026-06-13 14:58
-REC-1104,Neha Gupta,neha.gupta@example.com,API Integration,Phone,Search results are not showing the expected records.,Intermittent issue,Open,2026-06-24 03:48
-REC-1105,Sneha Iyer,sneha.iyer@example.com,Payment Portal,Phone,Approval request is stuck and manager cannot approve it.,High business impact,Open,2026-06-08 05:35
-REC-1106,Priya Reddy,priya.reddy@example.com,Web App,Web Form,Email notifications are not being delivered for new alerts.,Intermittent issue,In Review,2026-06-16 09:02
-REC-1107,Sneha Iyer,sneha.iyer@example.com,Admin Panel,Mobile App,Search results are not showing the expected records.,User blocked,In Review,2026-06-22 07:59
-REC-1108,Kiran Rao,kiran.rao@example.com,Payment Portal,Web Form,Approval request is stuck and manager cannot approve it.,Intermittent issue,Open,2026-06-08 20:09
-REC-1109,Nikhil Jain,nikhil.jain@example.com,Analytics Dashboard,Email,User cannot export the report as a PDF file.,High business impact,Open,2026-06-26 09:38
-REC-1110,Divya Menon,divya.menon@example.com,Admin Panel,Web Form,Push notifications stopped working after the latest app update.,Low impact,Open,2026-06-23 09:44
-REC-1111,Arjun Patel,arjun.patel@example.com,Notification Service,Web Form,User cannot export the report as a PDF file.,Intermittent issue,Open,2026-06-02 13:47
-REC-1112,Meera Nair,meera.nair@example.com,Admin Panel,Email,Report generation freezes when selecting a large date range.,High business impact,Open,2026-06-22 18:37
-REC-1113,Rahul Sharma,rahul.sharma@example.com,Admin Panel,Slack,Data sync between systems is delayed by more than one hour.,High business impact,Open,2026-06-16 16:41
-REC-1114,Neha Gupta,neha.gupta@example.com,Analytics Dashboard,Slack,User cannot export the report as a PDF file.,Low impact,In Review,2026-06-03 15:22
-REC-1115,Arjun Patel,arjun.patel@example.com,Reporting Tool,Mobile App,Admin user cannot access the settings page despite having permissions.,High business impact,Open,2026-06-11 13:44
-REC-1116,Neha Gupta,neha.gupta@example.com,API Integration,Slack,Search results are not showing the expected records.,Low impact,Open,2026-06-03 10:16
-REC-1117,Meera Nair,meera.nair@example.com,API Integration,Slack,Application crashes when opening the analytics page.,Intermittent issue,Open,2026-06-15 13:03
-REC-1118,Sneha Iyer,sneha.iyer@example.com,Reporting Tool,Slack,Customer records are duplicated after importing a CSV file.,Low impact,In Review,2026-06-25 01:13
-REC-1119,Kiran Rao,kiran.rao@example.com,Analytics Dashboard,Phone,Password reset link expires immediately after it is generated.,Low impact,In Review,2026-06-04 00:40
-REC-1120,Ananya Das,ananya.das@example.com,Analytics Dashboard,Phone,Reports are showing incorrect totals compared to yesterday.,Intermittent issue,Open,2026-06-14 02:14
+REC-2001,Priya Reddy,priya.reddy@example.com,Web App,Chat,Suspicious login alert was triggered from an unknown device.,Medium impact,Escalated,2026-06-01 22:28
+REC-2002,Meera Nair,meera.nair@example.com,Notification Service,Phone,Two-factor authentication code is not arriving on the registered mobile number.,Low impact,In Review,2026-06-08 06:41
+REC-2003,Sneha Iyer,sneha.iyer@example.com,API Integration,Phone,Report generation freezes when selecting a large date range.,Low impact,Open,2026-06-14 07:43
+REC-2004,Isha Kapoor,isha.kapoor@example.com,Mobile App,Mobile App,Push notifications stopped working after the latest app update.,High business impact,New,2026-06-16 15:10
+REC-2005,Arjun Patel,arjun.patel@example.com,Notification Service,Email,Data sync between systems is delayed by more than one hour.,High business impact,Escalated,2026-06-18 21:41
+REC-2006,Rohit Kumar,rohit.kumar@example.com,Analytics Dashboard,Slack,Reports are showing incorrect totals compared to yesterday.,Multiple users affected,New,2026-06-24 01:37
+REC-2007,Divya Menon,divya.menon@example.com,Notification Service,Web Form,Admin user cannot access the settings page despite having permissions.,Multiple users affected,Escalated,2026-06-10 09:56
+REC-2008,Arjun Patel,arjun.patel@example.com,Payment Portal,Mobile App,Uploaded documents are missing from the customer profile.,Medium impact,Pending,2026-06-18 11:04
+REC-2009,Vikram Singh,vikram.singh@example.com,Reporting Tool,Slack,The payment portal shows duplicate transactions.,High business impact,Open,2026-06-17 06:19
+REC-2010,Amit Verma,amit.verma@example.com,Notification Service,Phone,Two-factor authentication code is not arriving on the registered mobile number.,Medium impact,Open,2026-06-12 00:48
+REC-2011,Vikram Singh,vikram.singh@example.com,Admin Panel,Email,Billing page shows the wrong subscription plan.,User blocked,New,2026-06-17 17:56
+REC-2012,Pooja Shah,pooja.shah@example.com,Notification Service,Web Form,Suspicious login alert was triggered from an unknown device.,User blocked,New,2026-06-07 16:57
+REC-2013,Nikhil Jain,nikhil.jain@example.com,Admin Panel,Mobile App,Payment failed but amount was deducted from the customer account.,User blocked,In Review,2026-06-01 00:50
+REC-2014,Ananya Das,ananya.das@example.com,Web App,Phone,The search filter does not apply correctly on the reports page.,High business impact,New,2026-06-15 00:58
+REC-2015,Nikhil Jain,nikhil.jain@example.com,Web App,Web Form,API integration with third-party CRM is returning a 500 error.,High business impact,Pending,2026-06-15 18:33
+REC-2016,Lakshmi Prasad,lakshmi.prasad@example.com,Payment Portal,Chat,API token is rejected even though it was recently generated.,User blocked,Open,2026-06-15 14:03
+REC-2017,Sneha Iyer,sneha.iyer@example.com,Mobile App,Chat,Two-factor authentication code is not arriving on the registered mobile number.,Multiple users affected,Escalated,2026-06-23 03:26
+REC-2018,Isha Kapoor,isha.kapoor@example.com,Mobile App,Mobile App,Dashboard is loading very slowly and sometimes times out.,Multiple users affected,New,2026-06-17 23:15
+REC-2019,Meera Nair,meera.nair@example.com,Mobile App,Web Form,Customer cannot update billing address on the profile page.,Multiple users affected,New,2026-06-23 23:22
+REC-2020,Pooja Shah,pooja.shah@example.com,API Integration,Mobile App,Admin user cannot access the settings page despite having permissions.,User blocked,Escalated,2026-06-02 01:47
+REC-2021,Manish Agarwal,manish.agarwal@example.com,Web App,Email,The application logs out the user every few minutes.,Low impact,New,2026-06-05 13:45
+REC-2022,Priya Reddy,priya.reddy@example.com,Analytics Dashboard,Web Form,Admin user cannot access the settings page despite having permissions.,Multiple users affected,In Review,2026-06-01 04:37
+REC-2023,Isha Kapoor,isha.kapoor@example.com,Notification Service,Email,Invoice download button is not responding.,Low impact,New,2026-06-05 13:07
+REC-2024,Priya Reddy,priya.reddy@example.com,API Integration,Chat,API token is rejected even though it was recently generated.,Multiple users affected,Escalated,2026-06-23 12:34
+REC-2025,Meera Nair,meera.nair@example.com,Customer Portal,Mobile App,Dashboard is loading very slowly and sometimes times out.,Multiple users affected,In Review,2026-06-15 04:55
+REC-2026,Divya Menon,divya.menon@example.com,API Integration,Slack,Approval request is stuck and manager cannot approve it.,Low impact,Escalated,2026-06-08 14:31
+REC-2027,Pooja Shah,pooja.shah@example.com,Reporting Tool,Chat,The dashboard chart displays stale data.,Low impact,Pending,2026-06-11 07:10
+REC-2028,Sanjay Joshi,sanjay.joshi@example.com,API Integration,Chat,The notification preference page does not save changes.,Intermittent issue,Escalated,2026-06-23 18:36
+REC-2029,Kiran Rao,kiran.rao@example.com,Mobile App,Email,Uploaded documents are missing from the customer profile.,Intermittent issue,Pending,2026-06-24 08:34
+REC-2030,Divya Menon,divya.menon@example.com,Reporting Tool,Mobile App,Email notifications are not being delivered for new alerts.,Medium impact,New,2026-06-18 16:31
+REC-2031,Vikram Singh,vikram.singh@example.com,Payment Portal,Slack,Customer cannot update billing address on the profile page.,User blocked,Pending,2026-06-21 07:58
+REC-2032,Isha Kapoor,isha.kapoor@example.com,Web App,Chat,Approval request is stuck and manager cannot approve it.,Multiple users affected,Pending,2026-06-26 17:52
+REC-2033,Lakshmi Prasad,lakshmi.prasad@example.com,Reporting Tool,Slack,The dashboard chart displays stale data.,Medium impact,Escalated,2026-06-04 16:12
+REC-2034,Rohit Kumar,rohit.kumar@example.com,Billing System,Phone,Scheduled report email was not sent to stakeholders.,Intermittent issue,Pending,2026-06-22 13:31
+REC-2035,Meera Nair,meera.nair@example.com,Reporting Tool,Chat,The dashboard chart displays stale data.,User blocked,In Review,2026-06-22 16:56
+REC-2036,Amit Verma,amit.verma@example.com,Billing System,Phone,Email notifications are not being delivered for new alerts.,High business impact,New,2026-06-05 07:38
+REC-2037,Meera Nair,meera.nair@example.com,Web App,Phone,The application logs out the user every few minutes.,Low impact,Open,2026-06-06 00:42
+REC-2038,Sneha Iyer,sneha.iyer@example.com,Analytics Dashboard,Phone,User is unable to update account security settings.,Low impact,New,2026-06-05 14:01
+REC-2039,Sneha Iyer,sneha.iyer@example.com,Reporting Tool,Mobile App,Billing page shows the wrong subscription plan.,High business impact,New,2026-06-15 17:31
+REC-2040,Amit Verma,amit.verma@example.com,Mobile App,Mobile App,Reports are showing incorrect totals compared to yesterday.,High business impact,New,2026-06-15 06:57
+REC-2041,Sanjay Joshi,sanjay.joshi@example.com,Billing System,Phone,The search filter does not apply correctly on the reports page.,Multiple users affected,Pending,2026-06-06 08:15
+REC-2042,Meera Nair,meera.nair@example.com,Notification Service,Slack,Mobile layout is broken and buttons overlap on smaller screens.,Intermittent issue,New,2026-06-17 23:48
+REC-2043,Tanya Roy,tanya.roy@example.com,API Integration,Web Form,Reports are showing incorrect totals compared to yesterday.,Medium impact,Pending,2026-06-05 03:20
+REC-2044,Arjun Patel,arjun.patel@example.com,Analytics Dashboard,Chat,User role changed but permissions did not update correctly.,High business impact,In Review,2026-06-21 14:44
+REC-2045,Meera Nair,meera.nair@example.com,Admin Panel,Email,Suspicious login alert was triggered from an unknown device.,Intermittent issue,In Review,2026-06-06 22:41
+REC-2046,Amit Verma,amit.verma@example.com,API Integration,Chat,The dashboard chart displays stale data.,High business impact,New,2026-06-17 06:09
+REC-2047,Arjun Patel,arjun.patel@example.com,API Integration,Email,Security settings page shows unexpected error.,Low impact,Open,2026-06-25 18:30
+REC-2048,Arjun Patel,arjun.patel@example.com,Reporting Tool,Mobile App,Two-factor authentication code is not arriving on the registered mobile number.,User blocked,Escalated,2026-06-15 19:01
+REC-2049,Lakshmi Prasad,lakshmi.prasad@example.com,Payment Portal,Web Form,Push notifications stopped working after the latest app update.,User blocked,Pending,2026-06-06 16:14
+REC-2050,Rahul Sharma,rahul.sharma@example.com,API Integration,Chat,Webhook is not triggering after order confirmation.,High business impact,Open,2026-06-19 02:38
+REC-2051,Nikhil Jain,nikhil.jain@example.com,Web App,Mobile App,The payment portal shows duplicate transactions.,Multiple users affected,Escalated,2026-06-28 08:48
+REC-2052,Rahul Sharma,rahul.sharma@example.com,Payment Portal,Chat,The payment portal shows duplicate transactions.,Low impact,Pending,2026-06-22 12:26
+REC-2053,Sanjay Joshi,sanjay.joshi@example.com,Notification Service,Phone,API token is rejected even though it was recently generated.,Medium impact,New,2026-06-10 08:46
+REC-2054,Priya Reddy,priya.reddy@example.com,Notification Service,Web Form,File upload fails for documents larger than 10 MB.,High business impact,In Review,2026-06-05 15:22
+REC-2055,Rohit Kumar,rohit.kumar@example.com,Payment Portal,Mobile App,Password reset link expires immediately after it is generated.,Low impact,Escalated,2026-06-27 19:49
+REC-2056,Arjun Patel,arjun.patel@example.com,Reporting Tool,Slack,Report generation freezes when selecting a large date range.,High business impact,Open,2026-06-04 22:30
+REC-2057,Nikhil Jain,nikhil.jain@example.com,Customer Portal,Chat,Two-factor authentication code is not arriving on the registered mobile number.,Multiple users affected,Open,2026-06-13 04:07
+REC-2058,Nikhil Jain,nikhil.jain@example.com,Mobile App,Mobile App,File upload fails for documents larger than 10 MB.,Low impact,Open,2026-06-07 20:21
+REC-2059,Divya Menon,divya.menon@example.com,Mobile App,Mobile App,Two-factor authentication code is not arriving on the registered mobile number.,User blocked,Escalated,2026-06-17 01:07
+REC-2060,Amit Verma,amit.verma@example.com,Customer Portal,Phone,Push notifications stopped working after the latest app update.,Medium impact,New,2026-06-05 19:24
+REC-2061,Arjun Patel,arjun.patel@example.com,API Integration,Web Form,Customer sees blank screen after opening the mobile app.,High business impact,Escalated,2026-06-16 03:20
+REC-2062,Meera Nair,meera.nair@example.com,API Integration,Mobile App,Password reset link expires immediately after it is generated.,Low impact,Open,2026-06-07 21:25
+REC-2063,Nikhil Jain,nikhil.jain@example.com,Reporting Tool,Slack,Security settings page shows unexpected error.,Multiple users affected,Pending,2026-06-23 08:43
+REC-2064,Meera Nair,meera.nair@example.com,Analytics Dashboard,Email,Scheduled report email was not sent to stakeholders.,Low impact,Open,2026-06-05 23:42
+REC-2065,Divya Menon,divya.menon@example.com,Reporting Tool,Web Form,Email notifications are not being delivered for new alerts.,User blocked,Pending,2026-06-10 23:27
+REC-2066,Vikram Singh,vikram.singh@example.com,Notification Service,Chat,Billing page shows the wrong subscription plan.,Low impact,Pending,2026-06-15 14:40
+REC-2067,Manish Agarwal,manish.agarwal@example.com,Notification Service,Email,User receives access denied error after being promoted to manager.,User blocked,Pending,2026-06-14 00:17
+REC-2068,Lakshmi Prasad,lakshmi.prasad@example.com,Admin Panel,Web Form,User cannot remove an old team member from workspace.,Multiple users affected,Pending,2026-06-04 21:48
+REC-2069,Rahul Sharma,rahul.sharma@example.com,Admin Panel,Mobile App,The notification preference page does not save changes.,Intermittent issue,Pending,2026-06-18 17:50
+REC-2070,Priya Reddy,priya.reddy@example.com,Customer Portal,Phone,Data sync between systems is delayed by more than one hour.,Medium impact,Open,2026-06-20 07:16
+REC-2071,Ananya Das,ananya.das@example.com,Analytics Dashboard,Phone,Report generation freezes when selecting a large date range.,Low impact,Open,2026-06-23 14:18
+REC-2072,Manish Agarwal,manish.agarwal@example.com,Analytics Dashboard,Web Form,Customer cannot login after resetting password and sees invalid session token.,Low impact,Escalated,2026-06-24 06:16
+REC-2073,Manish Agarwal,manish.agarwal@example.com,Customer Portal,Chat,Application crashes when opening the analytics page.,Multiple users affected,Pending,2026-06-13 05:11
+REC-2074,Vikram Singh,vikram.singh@example.com,API Integration,Chat,User receives access denied error after being promoted to manager.,Multiple users affected,In Review,2026-06-08 07:31
+REC-2075,Sanjay Joshi,sanjay.joshi@example.com,Customer Portal,Email,File upload fails for documents larger than 10 MB.,Medium impact,Pending,2026-06-05 03:15
+REC-2076,Divya Menon,divya.menon@example.com,Billing System,Email,Payment failed but amount was deducted from the customer account.,Low impact,Open,2026-06-17 18:19
+REC-2077,Nikhil Jain,nikhil.jain@example.com,Mobile App,Chat,The application logs out the user every few minutes.,Low impact,New,2026-06-05 07:35
+REC-2078,Isha Kapoor,isha.kapoor@example.com,Mobile App,Email,Mobile layout is broken and buttons overlap on smaller screens.,Medium impact,Escalated,2026-06-25 13:47
+REC-2079,Divya Menon,divya.menon@example.com,API Integration,Slack,Invoice download button is not responding.,User blocked,New,2026-06-05 23:30
+REC-2080,Rohit Kumar,rohit.kumar@example.com,Web App,Slack,Data sync between systems is delayed by more than one hour.,Low impact,Escalated,2026-06-10 11:36
+REC-2081,Divya Menon,divya.menon@example.com,Reporting Tool,Phone,API integration with third-party CRM is returning a 500 error.,Low impact,In Review,2026-06-22 18:31
+REC-2082,Kiran Rao,kiran.rao@example.com,Web App,Phone,User role changed but permissions did not update correctly.,Medium impact,Open,2026-06-07 19:23
+REC-2083,Lakshmi Prasad,lakshmi.prasad@example.com,Analytics Dashboard,Email,Search results are not showing the expected records.,Low impact,Escalated,2026-06-09 01:48
+REC-2084,Meera Nair,meera.nair@example.com,Admin Panel,Mobile App,API token is rejected even though it was recently generated.,Medium impact,Pending,2026-06-10 02:48
+REC-2085,Ananya Das,ananya.das@example.com,Payment Portal,Email,The notification preference page does not save changes.,High business impact,Open,2026-06-13 10:18
+REC-2086,Nikhil Jain,nikhil.jain@example.com,Web App,Mobile App,Mobile layout is broken and buttons overlap on smaller screens.,High business impact,New,2026-06-03 18:04
+REC-2087,Lakshmi Prasad,lakshmi.prasad@example.com,Customer Portal,Slack,Suspicious login alert was triggered from an unknown device.,Multiple users affected,Escalated,2026-06-20 03:20
+REC-2088,Sanjay Joshi,sanjay.joshi@example.com,Billing System,Email,Security settings page shows unexpected error.,Medium impact,In Review,2026-06-28 04:49
+REC-2089,Rohit Kumar,rohit.kumar@example.com,Billing System,Mobile App,Invoice download button is not responding.,High business impact,Escalated,2026-06-13 23:06
+REC-2090,Sanjay Joshi,sanjay.joshi@example.com,Payment Portal,Mobile App,API token is rejected even though it was recently generated.,Medium impact,Open,2026-06-10 15:27
+REC-2091,Neha Gupta,neha.gupta@example.com,Billing System,Email,Billing page shows the wrong subscription plan.,Low impact,Escalated,2026-06-07 01:56
+REC-2092,Rahul Sharma,rahul.sharma@example.com,Admin Panel,Mobile App,API token is rejected even though it was recently generated.,Medium impact,Escalated,2026-06-25 01:40
+REC-2093,Arjun Patel,arjun.patel@example.com,API Integration,Slack,Customer sees blank screen after opening the mobile app.,Medium impact,New,2026-06-27 10:04
+REC-2094,Manish Agarwal,manish.agarwal@example.com,Web App,Web Form,Two-factor authentication code is not arriving on the registered mobile number.,High business impact,New,2026-06-24 08:17
+REC-2095,Ananya Das,ananya.das@example.com,Notification Service,Web Form,Customer says saved changes disappear after refreshing the page.,Intermittent issue,New,2026-06-23 21:17
+REC-2096,Meera Nair,meera.nair@example.com,Payment Portal,Email,API integration with third-party CRM is returning a 500 error.,Low impact,In Review,2026-06-17 02:59
+REC-2097,Tanya Roy,tanya.roy@example.com,Customer Portal,Mobile App,Password reset link expires immediately after it is generated.,Intermittent issue,Escalated,2026-06-26 03:24
+REC-2098,Amit Verma,amit.verma@example.com,Payment Portal,Web Form,User role changed but permissions did not update correctly.,User blocked,In Review,2026-06-05 20:15
+REC-2099,Divya Menon,divya.menon@example.com,Notification Service,Mobile App,User cannot remove an old team member from workspace.,Multiple users affected,In Review,2026-06-27 13:43
+REC-2100,Nikhil Jain,nikhil.jain@example.com,Billing System,Mobile App,Scheduled report email was not sent to stakeholders.,Medium impact,In Review,2026-06-11 07:26
+REC-2101,Sneha Iyer,sneha.iyer@example.com,Web App,Slack,Admin user cannot access the settings page despite having permissions.,Low impact,New,2026-06-08 21:12
+REC-2102,Lakshmi Prasad,lakshmi.prasad@example.com,Notification Service,Chat,Payment failed but amount was deducted from the customer account.,User blocked,New,2026-06-16 09:24
+REC-2103,Rahul Sharma,rahul.sharma@example.com,Customer Portal,Email,Search results are not showing the expected records.,Low impact,Pending,2026-06-19 05:13
+REC-2104,Sanjay Joshi,sanjay.joshi@example.com,Reporting Tool,Mobile App,Exported CSV file contains missing rows.,Medium impact,Escalated,2026-06-13 10:26
+REC-2105,Lakshmi Prasad,lakshmi.prasad@example.com,Admin Panel,Web Form,Mobile layout is broken and buttons overlap on smaller screens.,User blocked,New,2026-06-02 19:49
+REC-2106,Vikram Singh,vikram.singh@example.com,Notification Service,Chat,Customer cannot update billing address on the profile page.,User blocked,Escalated,2026-06-15 21:57
+REC-2107,Kiran Rao,kiran.rao@example.com,Mobile App,Web Form,Application crashes when opening the analytics page.,Multiple users affected,Open,2026-06-20 19:55
+REC-2108,Lakshmi Prasad,lakshmi.prasad@example.com,Analytics Dashboard,Email,Report generation freezes when selecting a large date range.,High business impact,Pending,2026-06-11 06:26
+REC-2109,Vikram Singh,vikram.singh@example.com,Admin Panel,Mobile App,API token is rejected even though it was recently generated.,Medium impact,Open,2026-06-14 16:38
+REC-2110,Rohit Kumar,rohit.kumar@example.com,Web App,Chat,Billing page shows the wrong subscription plan.,Medium impact,In Review,2026-06-19 05:46
+REC-2111,Lakshmi Prasad,lakshmi.prasad@example.com,API Integration,Email,Webhook is not triggering after order confirmation.,Low impact,Escalated,2026-06-21 14:07
+REC-2112,Sneha Iyer,sneha.iyer@example.com,Customer Portal,Email,Customer sees blank screen after opening the mobile app.,Low impact,Pending,2026-06-25 19:18
+REC-2113,Meera Nair,meera.nair@example.com,Analytics Dashboard,Email,The notification preference page does not save changes.,High business impact,Escalated,2026-06-14 20:50
+REC-2114,Ananya Das,ananya.das@example.com,Reporting Tool,Slack,API token is rejected even though it was recently generated.,Intermittent issue,In Review,2026-06-25 19:59
+REC-2115,Priya Reddy,priya.reddy@example.com,Customer Portal,Chat,User receives access denied error after being promoted to manager.,User blocked,Pending,2026-06-01 16:00
+REC-2116,Rohit Kumar,rohit.kumar@example.com,Billing System,Email,Reports are showing incorrect totals compared to yesterday.,User blocked,New,2026-06-24 05:18
+REC-2117,Tanya Roy,tanya.roy@example.com,Mobile App,Chat,Webhook is not triggering after order confirmation.,Multiple users affected,Pending,2026-06-27 04:53
+REC-2118,Rohit Kumar,rohit.kumar@example.com,Customer Portal,Email,The payment portal shows duplicate transactions.,Multiple users affected,Open,2026-06-10 08:46
+REC-2119,Tanya Roy,tanya.roy@example.com,Admin Panel,Phone,The notification preference page does not save changes.,User blocked,Open,2026-06-15 22:54
+REC-2120,Vikram Singh,vikram.singh@example.com,Payment Portal,Chat,The notification preference page does not save changes.,Intermittent issue,New,2026-06-24 12:26
+REC-2121,Nikhil Jain,nikhil.jain@example.com,Web App,Chat,Email notifications are not being delivered for new alerts.,User blocked,Pending,2026-06-10 12:08
+REC-2122,Pooja Shah,pooja.shah@example.com,Mobile App,Phone,Admin user cannot access the settings page despite having permissions.,Low impact,Open,2026-06-20 12:10
+REC-2123,Arjun Patel,arjun.patel@example.com,Customer Portal,Slack,Exported CSV file contains missing rows.,High business impact,New,2026-06-28 20:25
+REC-2124,Divya Menon,divya.menon@example.com,Payment Portal,Web Form,The notification preference page does not save changes.,Intermittent issue,Pending,2026-06-01 23:54
+REC-2125,Priya Reddy,priya.reddy@example.com,Reporting Tool,Email,User receives access denied error after being promoted to manager.,User blocked,Escalated,2026-06-04 03:31
+REC-2126,Tanya Roy,tanya.roy@example.com,API Integration,Chat,Customer cannot login after resetting password and sees invalid session token.,Medium impact,Escalated,2026-06-14 00:50
+REC-2127,Kiran Rao,kiran.rao@example.com,Notification Service,Mobile App,Webhook is not triggering after order confirmation.,Multiple users affected,New,2026-06-01 08:18
+REC-2128,Priya Reddy,priya.reddy@example.com,Analytics Dashboard,Email,API integration with third-party CRM is returning a 500 error.,Multiple users affected,Open,2026-06-27 08:20
+REC-2129,Rohit Kumar,rohit.kumar@example.com,Customer Portal,Email,Push notifications stopped working after the latest app update.,Intermittent issue,In Review,2026-06-19 20:53
+REC-2130,Aditya Menon,aditya.menon@example.com,Billing System,Slack,Payment failed but amount was deducted from the customer account.,Low impact,Open,2026-06-14 01:38
+REC-2131,Nikhil Jain,nikhil.jain@example.com,API Integration,Slack,Customer records are duplicated after importing a CSV file.,User blocked,In Review,2026-06-21 10:24
+REC-2132,Meera Nair,meera.nair@example.com,API Integration,Email,Billing page shows the wrong subscription plan.,Multiple users affected,Pending,2026-06-04 05:42
+REC-2133,Aditya Menon,aditya.menon@example.com,Admin Panel,Email,Invoice download button is not responding.,Medium impact,New,2026-06-26 10:13
+REC-2134,Isha Kapoor,isha.kapoor@example.com,Admin Panel,Mobile App,User cannot export the report as a PDF file.,High business impact,In Review,2026-06-28 09:36
+REC-2135,Divya Menon,divya.menon@example.com,Customer Portal,Mobile App,Approval request is stuck and manager cannot approve it.,Low impact,New,2026-06-17 18:46
+REC-2136,Manish Agarwal,manish.agarwal@example.com,Billing System,Mobile App,Push notifications stopped working after the latest app update.,User blocked,In Review,2026-06-13 02:38
+REC-2137,Manish Agarwal,manish.agarwal@example.com,Reporting Tool,Email,Scheduled report email was not sent to stakeholders.,High business impact,Escalated,2026-06-24 09:09
+REC-2138,Kiran Rao,kiran.rao@example.com,Notification Service,Web Form,Password reset link expires immediately after it is generated.,Low impact,Open,2026-06-25 08:02
+REC-2139,Neha Gupta,neha.gupta@example.com,Web App,Web Form,Two-factor authentication code is not arriving on the registered mobile number.,User blocked,Pending,2026-06-11 03:18
+REC-2140,Rahul Sharma,rahul.sharma@example.com,Billing System,Web Form,Billing page shows the wrong subscription plan.,Multiple users affected,Open,2026-06-22 20:42
+REC-2141,Priya Reddy,priya.reddy@example.com,Analytics Dashboard,Chat,Invoice download button is not responding.,Intermittent issue,Open,2026-06-08 09:56
+REC-2142,Kiran Rao,kiran.rao@example.com,Admin Panel,Web Form,Email notifications are not being delivered for new alerts.,Intermittent issue,In Review,2026-06-26 09:55
+REC-2143,Neha Gupta,neha.gupta@example.com,Reporting Tool,Web Form,API token is rejected even though it was recently generated.,User blocked,In Review,2026-06-14 00:05
+REC-2144,Divya Menon,divya.menon@example.com,Billing System,Mobile App,Payment failed but amount was deducted from the customer account.,Medium impact,New,2026-06-03 02:00
+REC-2145,Arjun Patel,arjun.patel@example.com,Mobile App,Mobile App,Customer records are duplicated after importing a CSV file.,User blocked,New,2026-06-05 13:32
+REC-2146,Nikhil Jain,nikhil.jain@example.com,API Integration,Mobile App,Dashboard is loading very slowly and sometimes times out.,Low impact,New,2026-06-27 03:21
+REC-2147,Ananya Das,ananya.das@example.com,Admin Panel,Email,Suspicious login alert was triggered from an unknown device.,Intermittent issue,Escalated,2026-06-08 19:33
+REC-2148,Nikhil Jain,nikhil.jain@example.com,Payment Portal,Phone,API integration with third-party CRM is returning a 500 error.,High business impact,Escalated,2026-06-02 00:30
+REC-2149,Tanya Roy,tanya.roy@example.com,Payment Portal,Web Form,Admin user cannot access the settings page despite having permissions.,Multiple users affected,Escalated,2026-06-28 08:01
+REC-2150,Rohit Kumar,rohit.kumar@example.com,Notification Service,Slack,Customer sees blank screen after opening the mobile app.,Multiple users affected,Escalated,2026-06-05 20:03
+REC-2151,Rahul Sharma,rahul.sharma@example.com,Mobile App,Chat,Payment failed but amount was deducted from the customer account.,High business impact,Escalated,2026-06-19 02:04
+REC-2152,Meera Nair,meera.nair@example.com,Admin Panel,Chat,Search results are not showing the expected records.,Intermittent issue,New,2026-06-24 03:22
+REC-2153,Rahul Sharma,rahul.sharma@example.com,Billing System,Slack,User receives access denied error after being promoted to manager.,Medium impact,In Review,2026-06-06 06:45
+REC-2154,Pooja Shah,pooja.shah@example.com,Customer Portal,Mobile App,User is unable to update account security settings.,User blocked,Pending,2026-06-22 16:58
+REC-2155,Lakshmi Prasad,lakshmi.prasad@example.com,Billing System,Chat,Push notifications stopped working after the latest app update.,Intermittent issue,In Review,2026-06-18 04:43
+REC-2156,Ananya Das,ananya.das@example.com,Web App,Chat,Password reset link expires immediately after it is generated.,Medium impact,Escalated,2026-06-20 18:58
+REC-2157,Rahul Sharma,rahul.sharma@example.com,API Integration,Slack,User is unable to update account security settings.,Medium impact,Open,2026-06-12 02:57
+REC-2158,Priya Reddy,priya.reddy@example.com,Admin Panel,Slack,Customer cannot login after resetting password and sees invalid session token.,Low impact,Escalated,2026-06-20 13:41
+REC-2159,Kiran Rao,kiran.rao@example.com,API Integration,Web Form,Customer says saved changes disappear after refreshing the page.,Low impact,Pending,2026-06-26 04:49
+REC-2160,Lakshmi Prasad,lakshmi.prasad@example.com,Admin Panel,Mobile App,Billing page shows the wrong subscription plan.,Medium impact,Open,2026-06-12 01:15
+REC-2161,Nikhil Jain,nikhil.jain@example.com,API Integration,Mobile App,Report generation freezes when selecting a large date range.,High business impact,Pending,2026-06-01 10:01
+REC-2162,Aditya Menon,aditya.menon@example.com,Customer Portal,Web Form,File upload fails for documents larger than 10 MB.,User blocked,Pending,2026-06-12 23:44
+REC-2163,Manish Agarwal,manish.agarwal@example.com,Admin Panel,Email,Reports are showing incorrect totals compared to yesterday.,Intermittent issue,In Review,2026-06-04 17:18
+REC-2164,Isha Kapoor,isha.kapoor@example.com,Web App,Email,User is unable to update account security settings.,Low impact,In Review,2026-06-06 01:34
+REC-2165,Vikram Singh,vikram.singh@example.com,Mobile App,Mobile App,Approval request is stuck and manager cannot approve it.,Medium impact,New,2026-06-18 16:26
+REC-2166,Manish Agarwal,manish.agarwal@example.com,Analytics Dashboard,Phone,Customer records are duplicated after importing a CSV file.,Low impact,New,2026-06-02 07:37
+REC-2167,Vikram Singh,vikram.singh@example.com,Customer Portal,Mobile App,API token is rejected even though it was recently generated.,Intermittent issue,New,2026-06-12 03:31
+REC-2168,Isha Kapoor,isha.kapoor@example.com,Customer Portal,Chat,Customer cannot update billing address on the profile page.,Intermittent issue,In Review,2026-06-24 03:28
+REC-2169,Vikram Singh,vikram.singh@example.com,Mobile App,Phone,Push notifications stopped working after the latest app update.,Multiple users affected,Escalated,2026-06-09 15:57
+REC-2170,Sneha Iyer,sneha.iyer@example.com,Mobile App,Chat,User cannot remove an old team member from workspace.,Intermittent issue,Escalated,2026-06-19 10:36
+REC-2171,Rohit Kumar,rohit.kumar@example.com,Customer Portal,Email,Scheduled report email was not sent to stakeholders.,Multiple users affected,Open,2026-06-05 14:01
+REC-2172,Vikram Singh,vikram.singh@example.com,Admin Panel,Email,Password reset link expires immediately after it is generated.,Multiple users affected,New,2026-06-14 05:56
+REC-2173,Neha Gupta,neha.gupta@example.com,Customer Portal,Web Form,API integration with third-party CRM is returning a 500 error.,Multiple users affected,New,2026-06-11 02:27
+REC-2174,Rahul Sharma,rahul.sharma@example.com,Reporting Tool,Web Form,User receives access denied error after being promoted to manager.,User blocked,Pending,2026-06-20 15:57
+REC-2175,Sanjay Joshi,sanjay.joshi@example.com,Customer Portal,Slack,API token is rejected even though it was recently generated.,Multiple users affected,Pending,2026-06-24 07:00
+REC-2176,Nikhil Jain,nikhil.jain@example.com,Payment Portal,Phone,The dashboard chart displays stale data.,Low impact,Escalated,2026-06-06 00:00
+REC-2177,Vikram Singh,vikram.singh@example.com,Notification Service,Slack,Application crashes when opening the analytics page.,Multiple users affected,New,2026-06-11 10:10
+REC-2178,Neha Gupta,neha.gupta@example.com,API Integration,Web Form,Suspicious login alert was triggered from an unknown device.,Intermittent issue,Open,2026-06-21 20:45
+REC-2179,Rahul Sharma,rahul.sharma@example.com,Web App,Mobile App,Data sync between systems is delayed by more than one hour.,User blocked,New,2026-06-03 11:27
+REC-2180,Neha Gupta,neha.gupta@example.com,API Integration,Email,Approval request is stuck and manager cannot approve it.,User blocked,Open,2026-06-21 15:01
+REC-2181,Arjun Patel,arjun.patel@example.com,Mobile App,Mobile App,The notification preference page does not save changes.,User blocked,New,2026-06-05 13:41
+REC-2182,Rahul Sharma,rahul.sharma@example.com,Billing System,Chat,Exported CSV file contains missing rows.,High business impact,New,2026-06-28 08:21
+REC-2183,Pooja Shah,pooja.shah@example.com,Web App,Email,Scheduled report email was not sent to stakeholders.,Low impact,Pending,2026-06-10 21:49
+REC-2184,Sneha Iyer,sneha.iyer@example.com,Customer Portal,Email,File upload fails for documents larger than 10 MB.,Intermittent issue,Pending,2026-06-20 00:10
+REC-2185,Rohit Kumar,rohit.kumar@example.com,Mobile App,Email,Admin user cannot access the settings page despite having permissions.,Multiple users affected,New,2026-06-05 17:59
+REC-2186,Isha Kapoor,isha.kapoor@example.com,Web App,Phone,Uploaded documents are missing from the customer profile.,Intermittent issue,Open,2026-06-12 23:17
+REC-2187,Arjun Patel,arjun.patel@example.com,API Integration,Mobile App,Password reset link expires immediately after it is generated.,Intermittent issue,Pending,2026-06-17 16:54
+REC-2188,Tanya Roy,tanya.roy@example.com,Customer Portal,Chat,User cannot remove an old team member from workspace.,User blocked,Open,2026-06-01 02:09
+REC-2189,Amit Verma,amit.verma@example.com,Mobile App,Chat,Exported CSV file contains missing rows.,Low impact,In Review,2026-06-12 05:12
+REC-2190,Neha Gupta,neha.gupta@example.com,Reporting Tool,Chat,Security settings page shows unexpected error.,User blocked,New,2026-06-20 19:03
+REC-2191,Lakshmi Prasad,lakshmi.prasad@example.com,Customer Portal,Slack,Exported CSV file contains missing rows.,High business impact,Open,2026-06-11 09:33
+REC-2192,Arjun Patel,arjun.patel@example.com,Reporting Tool,Phone,Push notifications stopped working after the latest app update.,Multiple users affected,Pending,2026-06-05 20:10
+REC-2193,Aditya Menon,aditya.menon@example.com,Customer Portal,Email,Password reset link expires immediately after it is generated.,Low impact,Open,2026-06-19 01:30
+REC-2194,Rohit Kumar,rohit.kumar@example.com,Billing System,Email,API integration with third-party CRM is returning a 500 error.,User blocked,Pending,2026-06-26 23:26
+REC-2195,Tanya Roy,tanya.roy@example.com,Web App,Chat,Webhook is not triggering after order confirmation.,Intermittent issue,Pending,2026-06-10 14:50
+REC-2196,Pooja Shah,pooja.shah@example.com,Reporting Tool,Mobile App,Uploaded documents are missing from the customer profile.,Medium impact,Open,2026-06-10 17:02
+REC-2197,Kiran Rao,kiran.rao@example.com,Admin Panel,Slack,User receives access denied error after being promoted to manager.,Low impact,Open,2026-06-25 11:14
+REC-2198,Sneha Iyer,sneha.iyer@example.com,Billing System,Chat,User is unable to update account security settings.,High business impact,In Review,2026-06-13 12:50
+REC-2199,Isha Kapoor,isha.kapoor@example.com,API Integration,Slack,The payment portal shows duplicate transactions.,Multiple users affected,New,2026-06-22 21:32
+REC-2200,Rohit Kumar,rohit.kumar@example.com,Mobile App,Web Form,The search filter does not apply correctly on the reports page.,User blocked,Escalated,2026-06-12 10:10
